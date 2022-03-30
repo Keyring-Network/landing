@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@700&display=swap');
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("../fonts/Gilroy-Regular.woff2");
+}
+
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src: url("../fonts/Gilroy-SemiBold.woff2");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+h1, h2, h3,
+h4, h5, h6,
+p {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: Sora, sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 110%;
+}
+
+h2 {
+  font-size: 56px;
+  line-height: 115%;
+}
+
+h1 span,
+h2 span {
+  background: -webkit-linear-gradient(#2ee297, #1dc9d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container {
+  margin: auto;
+  padding: 0 104px;
+  max-width: 1440px;
+}
+
+body, p {
+  font-family: Gilroy-Regular, sans-serif;
+}
+
+
+.btn_colorBorder {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 20px;
+  width: 248px;
+  height: 64px;
+  border: 2px solid;
+  border-image-source: linear-gradient(223.23deg, #2EE297 0.2%, #1DC9D4 78.23%);
+  border-image: linear-gradient(to right, #2EE297, #1DC9D4) 1;
+  background: -webkit-linear-gradient(#2ee297, #1dc9d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
