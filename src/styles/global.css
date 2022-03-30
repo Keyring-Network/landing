@@ -37,11 +37,21 @@ h2 {
   line-height: 115%;
 }
 
+h3 {
+  font-size: 32px;
+  line-height: 115%;
+}
+
 h1 span,
-h2 span {
+h2 span,
+h3 span {
   background: -webkit-linear-gradient(#2ee297, #1dc9d4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+img {
+  max-width: 100%;
 }
 
 .container {
@@ -53,7 +63,6 @@ h2 span {
 body, p {
   font-family: Gilroy-Regular, sans-serif;
 }
-
 
 .btn_colorBorder {
   display: flex;
@@ -68,6 +77,10 @@ body, p {
   background: -webkit-linear-gradient(#2ee297, #1dc9d4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.flex {
+  display: flex;
 }
 
 

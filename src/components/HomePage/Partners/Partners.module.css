@@ -1,0 +1,14 @@
+.partnersWrap {
+  background: #0f2830;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logosWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logosWrap > div {
+  max-width: 120px;
+}
