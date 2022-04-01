@@ -16,8 +16,8 @@ const Partners = () => (
     <div className={"container flex"}>
       <h3>{content.TITLE} {content.TITLE_COLORED}</h3>
       <div className={styles.logosWrap}>
-        {logos.map((logo) => (
-          <div className={styles.logo}>
+        {logos.map((logo, idx) => (
+          <div className={styles.logo} key={idx}>
             <img src={logo} alt="partner" />
           </div>
         ))}

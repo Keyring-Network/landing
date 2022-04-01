@@ -50,6 +50,10 @@ h3 span {
   -webkit-text-fill-color: transparent;
 }
 
+ul, li {
+  list-style: none;
+}
+
 img {
   max-width: 100%;
 }
