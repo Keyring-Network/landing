@@ -8,8 +8,9 @@ const WhatWeDo = () => {
     <div className={styles.partnersWrap}>
       <div className={"container"}>
         <div className={styles.titleWrap}>
-          <h2>{content.TITLE} {content.TITLE_COLORED}</h2>
-          <p>{content.DESCRIPTION}</p></div>
+          <h2>{content.TITLE} <span>{content.TITLE_COLORED}</span></h2>
+          <p>{content.DESCRIPTION}</p>
+        </div>
         <div className={styles.listWrap}>
           {content.LIST.map((el,idx) => (
             <div
