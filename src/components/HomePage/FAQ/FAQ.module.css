@@ -1,0 +1,20 @@
+.itemListWrap {
+  margin: 0 0 32px;
+  padding: 32px;
+  border: 2px solid transparent;
+}
+
+.answear {
+  visibility: hidden;
+  opacity: 0;
+  transition: .4s;
+}
+
+.itemListWrap.active {
+  border-color: black;
+}
+
+.itemListWrap.active .answear {
+  visibility: visible;
+  opacity: 1;
+}
