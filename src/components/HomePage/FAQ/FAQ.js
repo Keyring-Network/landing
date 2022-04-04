@@ -17,7 +17,6 @@ const FAQ = () => {
           <div
             className={classNames(styles.itemListWrap, activeTab === idx ? styles.active : '')}
             onClick={() => {setActiveTab(idx)}}
-            ref={tabRef}
             key={idx}
           >
             <div className={styles.question}>
