@@ -1,0 +1,25 @@
+/*.communityWrap {*/
+/*  position: relative;*/
+/*  z-index: 4;*/
+/*  background: #ffffff;*/
+/*}*/
+
+/*.communityContent {*/
+/*  position: relative;*/
+/*  z-index: 3;*/
+/*  background: #ffffff;*/
+/*  border: 2px solid #0f2830;*/
+/*}*/
+
+/*.communityWrap:before {*/
+/*  position: absolute;*/
+/*  right: -8px;*/
+/*  bottom: -8px;*/
+/*  z-index: 1;*/
+/*  display: flex;*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  background: linear-gradient(308.67deg, #2ee297 -15.91%, #1dc9d4 120.74%);*/
+/*  border: 2px solid #0f2830;*/
+/*  content: "";*/
+/*}*/

@@ -1,4 +1,4 @@
-export const headerMenu = [
+export const navMenu = [
   {text: "How It Works", url: "#how-works"},
   {text: "Features", url: "#features"},
   {text: "News", url: "#news"},
