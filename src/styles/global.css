@@ -57,6 +57,15 @@ h3 span {
   -webkit-text-fill-color: transparent;
 }
 
+a {
+  cursor: pointer;
+  transition: .4s;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
 ul, li {
   list-style: none;
 }
