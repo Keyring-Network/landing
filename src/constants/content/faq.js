@@ -18,3 +18,7 @@ export const FAQS = [
     answear: "More then 100+K users are satisfied using our app, and share their experience. Our app, and share their experience."
   }
 ]
+
+export const FAQ_ADDON = "Still have questions?"
+export const DOWNLOAD_DOCS = "Read the docs"
+export const ASK_DISCORD = "Ask us on Discord"
