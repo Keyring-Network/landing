@@ -5,6 +5,7 @@ import WhatWeDo from "../components/HomePage/WhatWeDo"
 import LatestNews from "../components/HomePage/LatestNews"
 import FAQ from "../components/HomePage/FAQ"
 import JoinCommunity from "../components/HomePage/JoinCommunity"
+import SignUp from "../components/HomePage/SignUp"
 import "../styles/global.css"
 
 const HomePage = () => {
@@ -16,6 +17,7 @@ const HomePage = () => {
       <LatestNews />
       <FAQ />
       <JoinCommunity />
+      <SignUp />
     </main>
   )
 }
