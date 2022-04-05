@@ -11,7 +11,7 @@ const JoinCommunity = () => (
           <p>{content.DESCRIPTION}</p>
         </div>
         <div className={styles.communitiesList}>
-          {content.SOCIAL_LIST.map((el,idx) => (
+          {content.SOCIAL_LIST.map((el, idx) => (
             <div className={styles.community} key={idx}>
               <div className={styles.communityContent}>
                 <div className={styles.icon}>{el.icon}</div>

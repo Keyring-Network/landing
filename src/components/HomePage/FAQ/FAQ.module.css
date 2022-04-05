@@ -10,7 +10,6 @@
 .leftContent {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
   margin-right: 144px;
 }
@@ -104,4 +103,60 @@
 
 .link img {
   margin-right: 16px;
+}
+
+@media (max-width: 1200px) {
+  .faqWrap {
+    padding: 100px 0;
+  }
+
+  .leftContent {
+    margin-right: 64px;
+  }
+
+   .tabsWrap {
+
+   }
+}
+
+@media (max-width: 991px) {
+  .leftContent {
+    margin-right: 32px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .titleWrap {
+    margin: 0 0 40px;
+  }
+
+  .faqAddons {
+    display: none;
+  }
+
+  .faqAddonsMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .faqAddonsMobile h3 {
+    margin: 0 0 24px;
+  }
+
+  .itemListContent {
+    padding: 16px 44px 16px 16px;
+  }
+
+  .arrow {
+    width: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .faqWrap {
+    padding: 56px 0;
+  }
 }

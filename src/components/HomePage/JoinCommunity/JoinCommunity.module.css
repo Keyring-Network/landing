@@ -35,12 +35,18 @@
 .community {
   position: relative;
   z-index: 1;
+  width: 30%;
   max-width: 375px;
+  margin-right: 50px;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
   background: #ffffff;
   border: 2px solid #0f2830;
+}
+
+.community:last-child {
+  margin-right: 0;
 }
 
 .community:before {
@@ -59,6 +65,7 @@
 .communityContent {
   position: relative;
   padding: 40px 32px;
+  height: -webkit-fill-available;
   background: #ffffff;
 }
 
@@ -97,6 +104,71 @@
 
 .link img {
   margin-left: 16px;
+}
+
+@media (max-width: 1400px) {
+  .community {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .communityWrap {
+    padding: 100px 0;
+  }
+
+  .titleWrap p {
+    margin-left: 40px;
+  }
+
+  .communityContent {
+    padding: 24px;
+  }
+
+  .link {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 991px) {
+  .titleWrap {
+    flex-direction: column;
+  }
+
+  .titleWrap p {
+    margin-left: 0;
+  }
+
+  .community {
+    margin-right: 24px
+  }
+
+  .communityContent {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .communityWrap {
+    padding: 56px 0;
+  }
+
+  .communitiesList {
+    flex-direction: column;
+  }
+
+  .community {
+    max-width: initial;
+    width: 100%;
+    margin: 0 auto 32px;
+  }
+
+  .communityContent {
+    padding: 28px 24px;
+  }
+  .icon {
+    margin: 0 0 24px;
+  }
 }
 
 

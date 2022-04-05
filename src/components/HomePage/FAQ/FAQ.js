@@ -46,6 +46,17 @@ const FAQ = () => {
             </div>
           ))}
         </div>
+        <div className={styles.faqAddonsMobile}>
+          <h3 className={styles.faqAddon}>{content.FAQ_ADDON}</h3>
+          <a href="/" className={styles.link}>
+            <img src={download} alt="download"/>
+            {content.DOWNLOAD_DOCS}
+          </a>
+          <a href="/" className={styles.link}>
+            <img src={discord} alt="discord"/>
+            {content.ASK_DISCORD}
+          </a>
+        </div>
       </div>
     </div>
   )
