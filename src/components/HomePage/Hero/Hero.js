@@ -29,12 +29,6 @@ const Hero = () => (
         <img src={anonMask} className={styles.anonMask} alt="anon mask" />
         <img src={shield} className={styles.shield} alt="shield" />
       </div>
-      {/*<div className={styles.heroImageWrap}>*/}
-      {/*  <img src={padlock} className={styles.padlock} alt="padlock" />*/}
-      {/*  <img src={key} className={styles.key} alt="key" />*/}
-      {/*  <img src={anonMask} className={styles.anonMask} alt="anon mask" />*/}
-      {/*  <img src={shield} className={styles.shield} alt="shield" />*/}
-      {/*</div>*/}
     </div>
   </div>
 )
