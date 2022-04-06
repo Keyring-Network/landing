@@ -4,7 +4,7 @@ import * as content from "../../../constants/content/signUp"
 import * as styles  from "./SignUp.module.css"
 
 const SignUp = () => (
-  <div className={"container"}>
+  <div id={"join-waitlist"} className={"container"}>
     <div className={styles.signUpWrap}>
       <div className={styles.signUpContent}>
         <div className={styles.titleWrap}>

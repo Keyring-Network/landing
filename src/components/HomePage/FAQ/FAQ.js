@@ -11,7 +11,7 @@ const FAQ = () => {
   const [activeTab, setActiveTab] = useState(0)
 
   return (
-    <div className={styles.faqWrap}>
+    <div id={"faq"} className={styles.faqWrap}>
       <div className={classNames("container", styles.container)}>
         <div className={styles.leftContent}>
           <div className={styles.titleWrap}>

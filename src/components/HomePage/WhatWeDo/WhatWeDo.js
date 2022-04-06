@@ -7,7 +7,7 @@ const WhatWeDo = () => {
   const [activeTab, setActiveTab] = useState(0)
 
   return (
-    <div className={styles.partnersWrap}>
+    <div id={"how-works"} className={styles.partnersWrap}>
       <div className={classNames("container", styles.container)}>
         <div className={styles.titleWrap}>
           <h2>{content.TITLE} <span>{content.TITLE_COLORED}</span></h2>

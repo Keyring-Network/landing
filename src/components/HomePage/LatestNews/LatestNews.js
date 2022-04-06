@@ -8,7 +8,7 @@ import medium from "../../../assets/images/medium-black.svg"
 
 const LatestNews = () => {
   return (
-    <div className={styles.newsWrap}>
+    <div id={"news"} className={styles.newsWrap}>
       <div className={"container"}>
         <div className={styles.titleWrap}>
           <h2>{content.TITLE} <span>{content.TITLE_COLORED}</span></h2>

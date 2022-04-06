@@ -25,9 +25,9 @@ const Footer = () => (
       <ul className={styles.socials}>
         {content.SOCIAL.map((el, idx) => (
           <li key={idx}>
-            <Link to={el.url}>
+            <a href={el.url} target={"_blank"}>
               <img src={el.icon} alt="social icon"/>
-            </Link>
+            </a>
           </li>
         ))}
       </ul>
