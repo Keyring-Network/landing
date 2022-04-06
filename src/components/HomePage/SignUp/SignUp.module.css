@@ -1,7 +1,7 @@
 .signUpWrap {
   position: relative;
   z-index: 4;
-  margin: 0 0 146px;
+  margin: 56px 0 146px;
   background: #ffffff;
 }
 
@@ -57,9 +57,42 @@
   color: inherit;
 }
 
-.img {
+.labirinth {
   position: absolute;
   right: 130px;
   bottom: -36px;
   z-index: 5;
+}
+
+@media (max-width: 1200px) {
+  .labirinth {
+    right: 40px;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 991px) {
+  .signUpContent {
+    padding: 44px;
+  }
+
+  .labirinth {
+    right: 40px;
+    max-width: 300px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .signUpContent {
+    padding: 260px 24px 24px;
+  }
+
+  .labirinth {
+    top: 24px;
+    left: 24px;
+    bottom: initial;
+    right: 40px;
+    max-width: 220px;
+  }
 }

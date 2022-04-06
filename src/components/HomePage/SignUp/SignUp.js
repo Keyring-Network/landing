@@ -13,7 +13,7 @@ const SignUp = () => (
         </div>
         <a href="/" className={styles.btn}>{content.BTN_TEXT}</a>
       </div>
-      <img src={labirinth} className={styles.img} alt={"labirinth"}/>
+      <img src={labirinth} className={styles.labirinth} alt={"labirinth"}/>
     </div>
   </div>
 )
