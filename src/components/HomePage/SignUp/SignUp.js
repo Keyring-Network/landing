@@ -1,5 +1,5 @@
 import React from "react"
-import labirinth from "../../../images/labirinth.svg"
+import labirinth from "../../../assets/images/labirinth.svg"
 import * as content from "../../../constants/content/signUp"
 import * as styles  from "./SignUp.module.css"
 

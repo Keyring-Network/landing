@@ -2,7 +2,7 @@ import React, {useState} from "react"
 import { Link } from "gatsby"
 import classNames from "classnames/bind"
 import MobileMenu from "./components/MobileMenu"
-import logo from "../../images/logo.svg"
+import logo from "../../assets/images/logo.svg"
 import * as menu from "../../constants/navMenu"
 import * as styles from "./Header.module.css"
 

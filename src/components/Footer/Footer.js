@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import classNames from "classnames/bind"
-import logo from "../../images/logo.svg"
+import logo from "../../assets/images/logo.svg"
 import * as menu from "../../constants/navMenu"
 import * as content from "../../constants/footer"
 import * as styles from "./Footer.module.css"

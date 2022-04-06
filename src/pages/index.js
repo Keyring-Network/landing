@@ -1,6 +1,5 @@
 import * as React from "react"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
+import Layout from "../components/Layout"
 import Hero from "../components/HomePage/Hero"
 import Partners from "../components/HomePage/Partners"
 import WhatWeDo from "../components/HomePage/WhatWeDo"
@@ -12,8 +11,7 @@ import "../styles/global.css"
 
 const HomePage = () => {
   return (
-    <>
-      <Header />
+    <Layout>
       <main>
         <Hero />
         <Partners />
@@ -23,8 +21,7 @@ const HomePage = () => {
         <JoinCommunity />
         <SignUp />
       </main>
-      <Footer />
-    </>
+    </Layout>
   )
 }
 

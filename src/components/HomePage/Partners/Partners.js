@@ -2,11 +2,11 @@ import React from "react"
 import classNames from "classnames/bind"
 import * as content from "../../../constants/content/partners"
 import * as styles  from "./Partners.module.css"
-import logo1 from "../../../images/Logo-1.svg"
-import logo2 from "../../../images/Logo-2.svg"
-import logo3 from "../../../images/Logo-3.svg"
-import logo4 from "../../../images/Logo-4.svg"
-import logo5 from "../../../images/Logo-5.svg"
+import logo1 from "../../../assets/images/Logo-1.svg"
+import logo2 from "../../../assets/images/Logo-2.svg"
+import logo3 from "../../../assets/images/Logo-3.svg"
+import logo4 from "../../../assets/images/Logo-4.svg"
+import logo5 from "../../../assets/images/Logo-5.svg"
 
 const logos = [
   logo1, logo2, logo3, logo4, logo5
