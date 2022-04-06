@@ -1,22 +1,38 @@
 .hero {
+  padding: 120px 0 134px;
   background: #0f2830;
   color: #ffffff;
 }
 
 .heroText {
-
+  position: relative;
+  text-align: center;
 }
 
 .heroText h1 {
-  margin: 0 0 32px;
+  margin: 0 auto 32px;
+  max-width: 900px;
+}
+
+.heroText .description {
+  margin: 0 auto 64px;
+  max-width: 530px;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.heroText .heroBtn {
+  display: inline-flex;
+  margin: 0 0 24px;
+}
+
+.heroText .ctaText {
+  font-size: 16px;
+  opacity: .6;
 }
 
 .heroImageWrap {
   position: relative;
-}
-
-.imagesGroup {
-  /*position: relative;*/
 }
 
 .imagesGroup > img {
@@ -34,4 +50,116 @@
 .imagesGroup img:last-child {
   right: 0;
   bottom: 0;
+}
+
+.padlock,
+.anonMask,
+.key,
+.shield {
+  position: absolute;
+}
+
+.shield,
+.anonMask {
+  max-width: 70px;
+}
+
+.padlock {
+  left: 0;
+  bottom: 80px;
+}
+
+.anonMask {
+  left: 180px;
+  bottom: -8px;
+}
+
+.key {
+  right: 0;
+  bottom: 24px;
+}
+
+.shield {
+  right: 0;
+  bottom: 260px;
+}
+
+@media (max-width: 1200px) {
+  .anonMask {
+    left: 150px;
+  }
+
+  .key {
+    bottom: 0;
+  }
+
+  .shield {
+    bottom: 200px;
+  }
+}
+
+@media (max-width: 991px) {
+  .shield,
+  .anonMask {
+    max-width: 40px;
+  }
+
+  .padlock {
+    width: 80px;
+  }
+
+  .anonMask {
+    left: 80px;
+  }
+
+  .key {
+    bottom: 0;
+    width: 180px;
+  }
+
+  .shield {
+    bottom: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 0;
+  }
+
+  .padlock {
+    bottom: 50px;
+    width: 60px;
+  }
+
+  .key {
+    width: 140px;
+  }
+
+  .shield {
+    bottom: 120px;
+  }
+}
+
+@media (max-width: 575px) {
+  .heroText .description {
+    margin: 0 auto 32px;
+  }
+
+  .anonMask {
+    left: 40px;
+  }
+
+  .key {
+    width: 100px;
+  }
+}
+
+@media (max-width: 575px) {
+  .padlock,
+  .anonMask,
+  .key,
+  .shield {
+    display: none;
+  }
 }
