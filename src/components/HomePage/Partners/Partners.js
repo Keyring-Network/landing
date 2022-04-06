@@ -1,4 +1,5 @@
 import React from "react"
+import classNames from "classnames/bind"
 import * as content from "../../../constants/content/partners"
 import * as styles  from "./Partners.module.css"
 import logo1 from "../../../images/Logo-1.svg"
@@ -13,8 +14,8 @@ const logos = [
 
 const Partners = () => (
   <div className={styles.partnersWrap}>
-    <div className={"container flex"}>
-      <h3>{content.TITLE} {content.TITLE_COLORED}</h3>
+    <div className={classNames("container", styles.container)}>
+      <h3>{content.TITLE} <span>{content.TITLE_COLORED}</span></h3>
       <div className={styles.logosWrap}>
         {logos.map((logo, idx) => (
           <div className={styles.logo} key={idx}>
