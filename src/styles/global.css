@@ -99,6 +99,17 @@ body, p {
   -webkit-text-fill-color: transparent;
 }
 
+.btn_whiteBorder {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 20px;
+  width: 248px;
+  height: 64px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
 .flex {
   display: flex;
 }
