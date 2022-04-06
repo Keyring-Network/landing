@@ -105,6 +105,10 @@
   margin-right: 16px;
 }
 
+.faqAddonsMobile {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .faqWrap {
     padding: 100px 0;
@@ -113,10 +117,6 @@
   .leftContent {
     margin-right: 64px;
   }
-
-   .tabsWrap {
-
-   }
 }
 
 @media (max-width: 991px) {
@@ -147,7 +147,7 @@
   }
 
   .itemListContent {
-    padding: 16px 44px 16px 16px;
+    padding: 16px 54px 16px 16px;
   }
 
   .arrow {
