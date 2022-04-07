@@ -1,13 +1,13 @@
 import React from "react"
 import classNames from "classnames/bind"
 import * as styles  from "./Hero.module.css"
-import * as content from "../../../constants/content/hero"
-import Button from "../../Button"
-import heroAnon from "../../../images/hero-anon.png"
-import padlock from "../../../images/padlock.svg"
-import key from "../../../images/key.svg"
-import anonMask from "../../../images/anon-mask.svg"
-import shield from "../../../images/shield.svg"
+import * as content from "../../../../constants/content/hero"
+import Button from "../../../../components/Button"
+import heroAnon from "../../../../assets/images/hero-anon.png"
+import padlock from "../../../../assets/images/padlock.svg"
+import key from "../../../../assets/images/key.svg"
+import anonMask from "../../../../assets/images/anon-mask.svg"
+import shield from "../../../../assets/images/shield.svg"
 
 const Hero = () => (
   <div className={styles.hero}>
@@ -19,7 +19,7 @@ const Hero = () => (
         </h1>
         <p className={styles.description}>{content.DESCRIPTION}</p>
         <Button
-          url={"#section"}
+          url={content.CTA_BUTTON_URL}
           btnStyles={classNames("btn_colorBorder", styles.heroBtn)}
           title={content.CTA_BUTTON}
         />

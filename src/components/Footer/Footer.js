@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import classNames from "classnames/bind"
-import logo from "../../images/logo.svg"
+import logo from "../../assets/images/logo.svg"
 import * as menu from "../../constants/navMenu"
 import * as content from "../../constants/footer"
 import * as styles from "./Footer.module.css"
@@ -25,9 +25,9 @@ const Footer = () => (
       <ul className={styles.socials}>
         {content.SOCIAL.map((el, idx) => (
           <li key={idx}>
-            <Link to={el.url}>
-              {el.icon}
-            </Link>
+            <a href={el.url} target={"_blank"}>
+              <img src={el.icon} alt="social icon"/>
+            </a>
           </li>
         ))}
       </ul>
@@ -37,9 +37,9 @@ const Footer = () => (
       <ul className={styles.socials}>
         {content.TERMS_MENU.map((el, idx) => (
           <li key={idx}>
-            <Link to={el.url}>
+            <a href={el.url} title={el.text} target={"_blank"}>
               {el.text}
-            </Link>
+            </a>
           </li>
         ))}
       </ul>

@@ -1,17 +1,17 @@
 import React, {useState} from "react"
 import classNames from "classnames/bind"
-import * as content from "../../../constants/content/faq"
+import * as content from "../../../../constants/content/faq"
 import * as styles  from "./FAQ.module.css"
-import postImage from "../../../images/post_image.jpg"
-import arrow from "../../../images/arrow.svg"
-import discord from "../../../images/discord-bordered.svg"
-import download from "../../../images/download.svg"
+import postImage from "../../../../assets/images/post_image.jpg"
+import arrow from "../../../../assets/images/arrow.svg"
+import discord from "../../../../assets/images/discord.svg"
+import download from "../../../../assets/images/download.svg"
 
 const FAQ = () => {
   const [activeTab, setActiveTab] = useState(0)
 
   return (
-    <div className={styles.faqWrap}>
+    <div id={"faq"} className={styles.faqWrap}>
       <div className={classNames("container", styles.container)}>
         <div className={styles.leftContent}>
           <div className={styles.titleWrap}>
@@ -19,11 +19,11 @@ const FAQ = () => {
           </div>
           <div className={styles.faqAddons}>
             <h3 className={styles.faqAddon}>{content.FAQ_ADDON}</h3>
-            <a href="/" className={styles.link}>
+            <a href={content.READ_DOCS} className={styles.link} target={"_blank"}>
               <img src={download} alt="download"/>
               {content.DOWNLOAD_DOCS}
             </a>
-            <a href="/" className={styles.link}>
+            <a href={content.LINK_DISCORD} className={styles.link} target={"_blank"}>
               <img src={discord} alt="discord"/>
               {content.ASK_DISCORD}
             </a>
@@ -48,11 +48,11 @@ const FAQ = () => {
         </div>
         <div className={styles.faqAddonsMobile}>
           <h3 className={styles.faqAddon}>{content.FAQ_ADDON}</h3>
-          <a href="/" className={styles.link}>
+          <a href={content.READ_DOCS} className={styles.link} target={"_blank"}>
             <img src={download} alt="download"/>
             {content.DOWNLOAD_DOCS}
           </a>
-          <a href="/" className={styles.link}>
+          <a href={content.LINK_DISCORD} className={styles.link} target={"_blank"}>
             <img src={discord} alt="discord"/>
             {content.ASK_DISCORD}
           </a>

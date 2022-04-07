@@ -1,10 +1,10 @@
 import React from "react"
-import arrow from "../../../images/follow-arrow.svg"
-import * as content from "../../../constants/content/joinCommunity"
+import arrow from "../../../../assets/images/follow-arrow.svg"
+import * as content from "../../../../constants/content/joinCommunity"
 import * as styles  from "./JoinCommunity.module.css"
 
 const JoinCommunity = () => (
-  <div className={styles.communityWrap}>
+  <div id={"community"} className={styles.communityWrap}>
     <div className={"container"}>
         <div className={styles.titleWrap}>
           <h2>{content.TITLE} <span>{content.TITLE_COLORED}</span></h2>

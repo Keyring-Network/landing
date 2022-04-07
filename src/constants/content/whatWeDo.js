@@ -1,6 +1,6 @@
 import React from "react"
-import img1 from "../../images/whatWeDo_1.jpg"
-import img2 from "../../images/post_image.jpg"
+import img1 from "../../assets/images/whatWeDo_1.jpg"
+import img2 from "../../assets/images/post_image.jpg"
 
 export const TITLE = "What We "
 export const TITLE_COLORED = "Do"

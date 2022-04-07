@@ -22,3 +22,6 @@ export const FAQS = [
 export const FAQ_ADDON = "Still have questions?"
 export const DOWNLOAD_DOCS = "Read the docs"
 export const ASK_DISCORD = "Ask us on Discord"
+
+export const READ_DOCS = "https://drive.google.com/file/d/1rIjY6GH4H9Cy5Ew_om7auJYsC3m1ToOT/view"
+export const LINK_DISCORD = "https://Keyring.Network"

@@ -1,13 +1,13 @@
 import React, {useState} from "react"
 import classNames from "classnames/bind"
-import * as content from "../../../constants/content/whatWeDo"
+import * as content from "../../../../constants/content/whatWeDo"
 import * as styles  from "./WhatWeDo.module.css"
 
 const WhatWeDo = () => {
   const [activeTab, setActiveTab] = useState(0)
 
   return (
-    <div className={styles.partnersWrap}>
+    <div id={"how-works"} className={styles.partnersWrap}>
       <div className={classNames("container", styles.container)}>
         <div className={styles.titleWrap}>
           <h2>{content.TITLE} <span>{content.TITLE_COLORED}</span></h2>
@@ -25,7 +25,7 @@ const WhatWeDo = () => {
               </div>
               <div className={classNames(styles.itemList)}>
                 <div className={styles.icon}>{el.icon}</div>
-                <div className={styles.itemInfo}>
+                <div>
                   <p className={styles.title}>{el.title}</p>
                   <p className={styles.text}>{el.text}</p>
                 </div>
