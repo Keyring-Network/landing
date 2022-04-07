@@ -37,9 +37,9 @@ const Footer = () => (
       <ul className={styles.socials}>
         {content.TERMS_MENU.map((el, idx) => (
           <li key={idx}>
-            <Link to={el.url}>
+            <a href={el.url} title={el.text} target={"_blank"}>
               {el.text}
-            </Link>
+            </a>
           </li>
         ))}
       </ul>

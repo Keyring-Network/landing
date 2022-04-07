@@ -19,7 +19,7 @@ const Hero = () => (
         </h1>
         <p className={styles.description}>{content.DESCRIPTION}</p>
         <Button
-          url={"#join-waitlist"}
+          url={content.CTA_BUTTON_URL}
           btnStyles={classNames("btn_colorBorder", styles.heroBtn)}
           title={content.CTA_BUTTON}
         />
