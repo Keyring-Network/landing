@@ -4,7 +4,7 @@ import * as content from "../../../../constants/content/faq"
 import * as styles  from "./FAQ.module.css"
 import postImage from "../../../../assets/images/post_image.jpg"
 import arrow from "../../../../assets/images/arrow.svg"
-import discord from "../../../../assets/images/discord-black.svg"
+import discord from "../../../../assets/images/discord.svg"
 import download from "../../../../assets/images/download.svg"
 
 const FAQ = () => {
