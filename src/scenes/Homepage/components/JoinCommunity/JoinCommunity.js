@@ -1,6 +1,6 @@
 import React from "react"
-import arrow from "../../../assets/images/follow-arrow.svg"
-import * as content from "../../../constants/content/joinCommunity"
+import arrow from "../../../../assets/images/follow-arrow.svg"
+import * as content from "../../../../constants/content/joinCommunity"
 import * as styles  from "./JoinCommunity.module.css"
 
 const JoinCommunity = () => (

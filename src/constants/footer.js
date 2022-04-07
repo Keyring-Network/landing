@@ -1,5 +1,5 @@
 import instagram from "../assets/images/instagram.svg"
-import discord from "../assets/images/discord-bordered.svg"
+import discord from "../assets/images/discord.svg"
 import github from "../assets/images/github.svg"
 import medium from "../assets/images/medium.svg"
 

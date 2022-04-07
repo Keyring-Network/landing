@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 import classNames from "classnames/bind"
-import * as content from "../../../constants/content/whatWeDo"
+import * as content from "../../../../constants/content/whatWeDo"
 import * as styles  from "./WhatWeDo.module.css"
 
 const WhatWeDo = () => {

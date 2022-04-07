@@ -1,11 +1,11 @@
 import React, {useState} from "react"
 import classNames from "classnames/bind"
-import * as content from "../../../constants/content/faq"
+import * as content from "../../../../constants/content/faq"
 import * as styles  from "./FAQ.module.css"
-import postImage from "../../../assets/images/post_image.jpg"
-import arrow from "../../../assets/images/arrow.svg"
-import discord from "../../../assets/images/discord-bordered.svg"
-import download from "../../../assets/images/download.svg"
+import postImage from "../../../../assets/images/post_image.jpg"
+import arrow from "../../../../assets/images/arrow.svg"
+import discord from "../../../../assets/images/discord-black.svg"
+import download from "../../../../assets/images/download.svg"
 
 const FAQ = () => {
   const [activeTab, setActiveTab] = useState(0)

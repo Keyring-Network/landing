@@ -1,10 +1,10 @@
 import React from "react"
 import classNames from "classnames/bind"
-import Button from "../../Button"
-import * as content from "../../../constants/content/latestNews"
+import Button from "../../../../components/Button"
+import * as content from "../../../../constants/content/latestNews"
 import * as styles  from "./LatestNews.module.css"
-import postImage from "../../../assets/images/post_image.jpg"
-import medium from "../../../assets/images/medium-black.svg"
+import postImage from "../../../../assets/images/post_image.jpg"
+import medium from "../../../../assets/images/medium-black.svg"
 
 const LatestNews = () => {
   return (
