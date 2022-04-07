@@ -8,31 +8,34 @@ module.exports = {
     "gatsby-plugin-sitemap",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp", {
+    "gatsby-transformer-sharp",
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         "name": "images",
-        "path": "./src/images/"
+        "path": "./src/assets/images/"
       },
       __key: "images"
-    }
-  ]
-};
-
-plugins: [
-  {
-    resolve: `gatsby-plugin-react-css-modules`,
-    options: {
-      filetypes: {
-        ".scss": { syntax: `postcss-scss` },
-      },
-      exclude: `\/global\/`,
     },
-  },
-]
-
-plugins: [
-  {
-    resolve: `gatsby-plugin-sass`
-  },
-]
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        cssLoaderOptions: {
+          esModule: false,
+          modules: {
+            namedExport: false,
+          },
+        },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-react-css-modules`,
+      options: {
+        filetypes: {
+          ".scss": { syntax: `postcss-scss` },
+        },
+        exclude: `\/global\/`,
+      },
+    },
+  ]
+}

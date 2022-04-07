@@ -25,7 +25,7 @@ const WhatWeDo = () => {
               </div>
               <div className={classNames(styles.itemList)}>
                 <div className={styles.icon}>{el.icon}</div>
-                <div className={styles.itemInfo}>
+                <div>
                   <p className={styles.title}>{el.title}</p>
                   <p className={styles.text}>{el.text}</p>
                 </div>
