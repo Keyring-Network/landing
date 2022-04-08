@@ -22,6 +22,13 @@ const Footer = () => (
     </div>
     <div className={classNames("container", styles.footerContainer)}>
       <p>{content.INFO_TEXT}</p>
+      <ul className={styles.mobileMenu}>
+        {menu.navMenu.map((el, idx) => (
+          <li key={idx}>
+            <Link to={el.url}>{el.text}</Link>
+          </li>
+        ))}
+      </ul>
       <ul className={styles.socials}>
         {content.SOCIAL.map((el, idx) => (
           <li key={idx}>
