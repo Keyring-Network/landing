@@ -5,6 +5,8 @@ import Button from "../../../../components/Button"
 import * as content from "../../../../constants/content/latestNews"
 import * as styles  from "./LatestNews.module.css"
 import postImage from "../../../../assets/images/post_image.jpg"
+import decor1 from "../../../../assets/images/decor/ellipse.svg"
+import decor2 from "../../../../assets/images/decor/question.svg"
 import medium from "../../../../assets/images/medium-black.svg"
 
 const LatestNews = () => {
@@ -38,7 +40,7 @@ const LatestNews = () => {
 
   return (
     <div id={"news"} className={styles.newsWrap}>
-      <div className={"container"}>
+      <div className={classNames("container", styles.newsContainer)}>
         <div className={styles.titleWrap}>
           <h2>{content.TITLE} <span>{content.TITLE_COLORED}</span></h2>
           <p>{content.DESCRIPTION}</p>
@@ -87,6 +89,8 @@ const LatestNews = () => {
           title={content.BTN_TEXT}
           target={"_blank"}
         />
+        <img src={decor1} className={styles.decorEllipse} alt={"diagram"} />
+        <img src={decor2} className={styles.decorQuestion} alt={"diagram"} />
       </div>
     </div>
   )
