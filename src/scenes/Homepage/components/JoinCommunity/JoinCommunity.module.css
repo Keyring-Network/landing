@@ -106,6 +106,27 @@
   margin-left: 16px;
 }
 
+.communityContainer {
+  position: relative;
+}
+
+.decorPadlock,
+.decorKey {
+  position: absolute;
+  z-index: 5;
+}
+
+.decorPadlock {
+  top: -200px;
+  right: 200px;
+  width: 112px;
+}
+
+.decorKey {
+  left: 220px;
+  bottom: -220px;
+}
+
 @media (max-width: 1400px) {
   .community {
     max-width: 350px;
@@ -127,6 +148,15 @@
 
   .link {
     font-size: 14px;
+  }
+
+  .decorPadlock {
+    top: -160px;
+  }
+
+  .decorKey {
+    left: 180px;
+    bottom: -160px;
   }
 }
 
@@ -166,8 +196,27 @@
   .communityContent {
     padding: 28px 24px;
   }
+
   .icon {
     margin: 0 0 24px;
+  }
+
+  .decorPadlock {
+    top: -76px;
+    right: 80px;
+    width: 50px;
+  }
+
+  .decorKey {
+    left: initial;
+    right: 60px;
+    bottom: -104px;
+    width: 80px;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1) rotate(-16deg);
   }
 }
 
