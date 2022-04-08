@@ -10,31 +10,31 @@ import medium from "../../../../assets/images/medium-black.svg"
 const LatestNews = () => {
   // const { node: blogpageContent } = data.allMediumPost.edges[0]
   // const { data: pageData } = blogpageContent;
-  // const blogMediumQueryData = useStaticQuery(
-  //   graphql`
-  //   query {
-  //     allMediumPost(sort: { fields: [createdAt], order: DESC }) {
-  //       edges {
-  //         node {
-  //           id
-  //           title
-  //           uniqueSlug
-  //           createdAt(formatString: "MMM YYYY")
-  //           virtuals {
-  //             previewImage {
-  //               imageId
-  //             }
-  //           }
-  //           author {
-  //             name
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
-  //
-  // const blogs = blogMediumQueryData.allMediumPost.edges
+  const blogMediumQueryData = useStaticQuery(
+    graphql`
+    query {
+      allMediumPost(sort: { fields: [createdAt], order: DESC }) {
+        edges {
+          node {
+            id
+            title
+            uniqueSlug
+            createdAt(formatString: "MMM YYYY")
+            virtuals {
+              previewImage {
+                imageId
+              }
+            }
+            author {
+              name
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  const blogs = blogMediumQueryData.allMediumPost.edges
 
   return (
     <div id={"news"} className={styles.newsWrap}>
