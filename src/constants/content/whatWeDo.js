@@ -1,5 +1,5 @@
 import React from "react"
-import img1 from "../../assets/images/whatWeDo_1.jpg"
+import img1 from "../../assets/images/what_we_do_1.jpg"
 import img2 from "../../assets/images/post_image.jpg"
 
 export const TITLE = "What We "

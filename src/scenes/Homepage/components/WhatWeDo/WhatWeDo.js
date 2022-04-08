@@ -1,5 +1,7 @@
 import React, {useState} from "react"
 import classNames from "classnames/bind"
+import decor1 from "../../../../assets/images/decor/arrow.svg"
+import decor2 from "../../../../assets/images/decor/padlock.svg"
 import * as content from "../../../../constants/content/whatWeDo"
 import * as styles  from "./WhatWeDo.module.css"
 
@@ -20,8 +22,12 @@ const WhatWeDo = () => {
               onClick={() => {setActiveTab(idx)}}
               key={idx}
             >
-              <div className={classNames(styles.itemListImage)}>
-                <img src={el.img} alt={"diagram"} />
+              <div className={classNames(styles.itemListImageWrap)}>
+                <div className={classNames(styles.itemListImage)}>
+                  <img src={el.img} className={styles.mainImg} alt={"diagram"} />
+                  <img src={decor1} className={styles.decorArrow} alt={"diagram"} />
+                  <img src={decor2} className={styles.decorLock} alt={"diagram"} />
+                </div>
               </div>
               <div className={classNames(styles.itemList)}>
                 <div className={styles.icon}>{el.icon}</div>

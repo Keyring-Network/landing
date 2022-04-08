@@ -3,6 +3,28 @@
   background: #0f2830;
   color: #ffffff;
 }
+.newsContainer {
+  position: relative;
+}
+
+.decorEllipse,
+.decorQuestion {
+  position: absolute;
+  z-index: 5;
+}
+
+.decorEllipse {
+  top: -80px;
+  right: 104px;
+  width: 170px;
+}
+
+.decorQuestion {
+  left: 320px;
+  bottom: -200px;
+  width: 104px;
+}
+
 .titleWrap {
   margin: 0 auto 64px;
   max-width: 530px;
@@ -140,6 +162,17 @@
   .date {
     padding-right: 40px;
   }
+
+  .decorEllipse {
+    top: -140px;
+  }
+
+  .decorQuestion {
+    left: initial;
+    right: 52px;
+    bottom: -100px;
+    width: 80px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -159,5 +192,10 @@
 
   .info {
     padding: 24px;
+  }
+
+  .decorEllipse {
+    right: 32px;
+    top: -150px;
   }
 }

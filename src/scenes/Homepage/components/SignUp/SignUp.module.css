@@ -1,7 +1,7 @@
 .signUpWrap {
   position: relative;
   z-index: 4;
-  margin: 56px 0 146px;
+  margin: 146px 0;
   background: #ffffff;
 }
 
@@ -64,6 +64,22 @@
   z-index: 5;
 }
 
+.decorKeyUp,
+.decorFingerPrint {
+  position: absolute;
+  z-index: 5;
+}
+
+.decorKeyUp {
+  top: -32px;
+  right: 300px;
+}
+
+.decorFingerPrint {
+  right: 116px;
+  top: 116px;
+}
+
 @media (max-width: 1200px) {
   .labirinth {
     right: 40px;
@@ -80,10 +96,23 @@
     right: 40px;
     max-width: 300px;
   }
+
+  .decorKeyUp,
+  .decorFingerPrint {
+    width: 58px;
+  }
+
+  .decorFingerPrint {
+    right: 32px;
+    top: 32px;
+  }
 }
 
-
 @media (max-width: 768px) {
+  .signUpWrap {
+    margin: 56px 0;
+  }
+
   .signUpContent {
     padding: 260px 24px 24px;
   }
@@ -94,5 +123,23 @@
     bottom: initial;
     right: 40px;
     max-width: 220px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .decorKeyUp,
+  .decorFingerPrint {
+    width: 32px;
+  }
+
+  .decorKeyUp {
+    top: -12px;
+    left: 58px;
+  }
+
+  .decorFingerPrint {
+    top: 162px;
   }
 }

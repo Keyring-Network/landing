@@ -44,6 +44,12 @@
   }
 }
 
+@media (max-width: 991px) {
+  .partnersWrap {
+    padding: 0 0 56px;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
