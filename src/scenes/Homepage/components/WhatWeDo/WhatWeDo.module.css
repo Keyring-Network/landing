@@ -1,6 +1,5 @@
 .partnersWrap {
   padding: 153px 0 163px;
-  /*position: relative;*/
 }
 
 .container {
@@ -87,25 +86,42 @@
   transition: all ease .4s;
 }
 
-.itemListImage {
+.itemListImageWrap {
   position: absolute;
   top: 32px;
   left: 105px;
-  overflow: hidden;
   display: none;
-  width: 538px;
-  height: 538px;
-  border: 2px solid #0f2830;
 }
 
-.itemListImage img {
+.itemListImageWrap .mainImg {
   display: flex;
   height: fit-content;
 }
 
+.itemListImage {
+  position: relative;
+  border: 2px solid #0f2830;
+}
+
+.decorArrow,
+.decorLock {
+  position: absolute;
+  z-index: 5;
+}
+
+.decorArrow {
+  top: -40px;
+  right: 110px;
+}
+
+.decorLock {
+  left: 60px;
+  bottom: -44px;
+}
+
 .itemListImage:before {
   position: absolute;
-  right: -12px;
+  right: -11px;
   bottom: -12px;
   z-index: 1;
   display: flex;
@@ -116,13 +132,13 @@
   content: "";
 }
 
-.itemListWrap.active .itemListImage {
+.itemListWrap.active .itemListImageWrap {
   display: flex;
   visibility: visible;
   opacity: 1;
 }
 
-.itemListImage img {
+.itemListImageWrap .mainImg {
   position: relative;
   z-index: 2;
   width: inherit;
@@ -148,27 +164,14 @@
   .itemListWrap {
     padding-left: 45%;
   }
-  .itemListImage {
-    width: 400px;
-    height: 400px;
-  }
 
-  .itemListImage {
+  .itemListImageWrap {
     left: 52px;
   }
 }
 
 @media (max-width: 1200px) {
-  .titleWrap,
-  .itemListWrap {
-  }
-
-  .itemListImage {
-    width: 350px;
-    height: 350px;
-  }
-
-  .itemListImage {
+  .itemListImageWrap {
     left: 52px;
   }
 }
@@ -227,7 +230,7 @@
     content: "";
   }
 
-  .itemListImage {
+  .itemListImageWrap {
     position: relative;
     top: initial;
     left: initial;
@@ -238,9 +241,8 @@
     border: none;
   }
 
-  .itemListImage img {
+  .itemListImageWrap .mainImg {
     height: fit-content;
-    border: 2px solid #0f2830;
   }
 
   .title {
@@ -254,5 +256,21 @@
   .icon svg {
     width: 24px;
     height: 24px;
+  }
+
+  .itemListImageWrap {
+    padding: 16px;
+  }
+
+  .decorArrow {
+    top: -20px;
+    right: 110px;
+    width: 32px;
+  }
+
+  .decorLock {
+    width: 44px;
+    left: 60px;
+    bottom: -14px;
   }
 }
