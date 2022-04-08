@@ -177,6 +177,10 @@
 }
 
 @media (max-width: 991px) {
+  .partnersWrap {
+    padding: 58px 0;
+  }
+
   .titleWrap,
   .itemListWrap {
     padding: 0;

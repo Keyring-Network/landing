@@ -40,6 +40,7 @@ const Footer = () => (
       </ul>
     </div>
     <div className={classNames("container", styles.footerContainer)}>
+      <hr />
       <p>{content.RIGHTS_RESERVED_TEXT}</p>
       <ul className={styles.socials}>
         {content.TERMS_MENU.map((el, idx) => (

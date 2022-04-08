@@ -49,12 +49,22 @@
 }
 
 .footer .footerContainer {
+  position: relative;
   margin-bottom: 32px;
 }
 
 .footerContainer:nth-child(2) {
   padding-bottom: 48px;
-  border-bottom: 2px solid #ffffff;
+}
+
+.footerContainer hr {
+  position: absolute;
+  top: -50px;
+  width: calc(100% - 208px);
+  height: 2px;
+  background: #ffffff;
+  box-shadow: none;
+  border: none;
 }
 
 .socials {
@@ -69,6 +79,12 @@
 
 .mobileMenu {
   display: none;
+}
+
+@media (max-width: 1400px) {
+  .footerContainer hr {
+    width: calc(100% - 104px);
+  }
 }
 
 @media (max-width: 991px) {
@@ -118,5 +134,11 @@
   .footerContainer:last-child {
     font-size: 8px;
     line-height: 9px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footerContainer hr {
+    width: calc(100% - 48px);
   }
 }
