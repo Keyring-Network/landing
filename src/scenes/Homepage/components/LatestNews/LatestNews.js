@@ -1,4 +1,5 @@
 import React from "react"
+import { StaticQuery, graphql, useStaticQuery } from "gatsby"
 import classNames from "classnames/bind"
 import Button from "../../../../components/Button"
 import * as content from "../../../../constants/content/latestNews"
@@ -7,6 +8,34 @@ import postImage from "../../../../assets/images/post_image.jpg"
 import medium from "../../../../assets/images/medium-black.svg"
 
 const LatestNews = () => {
+  // const { node: blogpageContent } = data.allMediumPost.edges[0]
+  // const { data: pageData } = blogpageContent;
+  // const blogMediumQueryData = useStaticQuery(
+  //   graphql`
+  //   query {
+  //     allMediumPost(sort: { fields: [createdAt], order: DESC }) {
+  //       edges {
+  //         node {
+  //           id
+  //           title
+  //           uniqueSlug
+  //           createdAt(formatString: "MMM YYYY")
+  //           virtuals {
+  //             previewImage {
+  //               imageId
+  //             }
+  //           }
+  //           author {
+  //             name
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
+  //
+  // const blogs = blogMediumQueryData.allMediumPost.edges
+
   return (
     <div id={"news"} className={styles.newsWrap}>
       <div className={"container"}>
