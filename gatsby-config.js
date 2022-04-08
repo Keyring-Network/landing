@@ -37,5 +37,11 @@ module.exports = {
         exclude: `\/global\/`,
       },
     },
+    {
+      resolve: `gatsby-source-medium`,
+      options: {
+        username: `keyring`,
+      },
+    }
   ]
 }
