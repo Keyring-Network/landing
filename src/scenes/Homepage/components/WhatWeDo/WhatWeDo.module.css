@@ -162,7 +162,7 @@
 @media (max-width: 1400px) {
   .titleWrap,
   .itemListWrap {
-    padding-left: 45%;
+    padding-left: 55%;
   }
 
   .itemListImageWrap {
@@ -173,6 +173,8 @@
 @media (max-width: 1200px) {
   .itemListImageWrap {
     left: 52px;
+    max-width: 480px;
+    width: 40%;
   }
 }
 

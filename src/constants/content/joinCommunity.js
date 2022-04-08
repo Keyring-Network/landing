@@ -30,7 +30,7 @@ export const SOCIAL_LIST = [
         </clipPath>
       </defs>
     </svg>,
-    title: "DIscord",
+    title: "Discord",
     text: "Chat, discussions and many more about our company.",
     btn_text: "Request to join the server"
   },
