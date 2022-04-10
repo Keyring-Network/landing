@@ -22,7 +22,7 @@
 
 .titleWrap p {
   margin-left: 140px;
-  font-family: 'Gilroy', sans-serif;
+  font-family: 'Gilroy-Regular', sans-serif;
   font-size: 18px;
   line-height: 150%
 }
@@ -35,7 +35,7 @@
 .community {
   position: relative;
   z-index: 1;
-  width: 30%;
+  width: 32%;
   max-width: 375px;
   margin-right: 50px;
   display: flex;
@@ -70,7 +70,7 @@
 }
 
 .icon {
-  margin: 0 0 32px;
+  margin: 0 0 20px;
 }
 
 .title {
@@ -83,7 +83,7 @@
 
 .text {
   margin: 0 0 28px;
-  font-family: 'Gilroy', sans-serif;
+  font-family: 'Gilroy-Regular', sans-serif;
   font-size: 16px;
   line-height: 150%;
 }
@@ -129,6 +129,7 @@
 
 @media (max-width: 1400px) {
   .community {
+    width: 30%;
     max-width: 350px;
   }
 }

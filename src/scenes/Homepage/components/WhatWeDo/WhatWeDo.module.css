@@ -16,7 +16,7 @@
 }
 
 .titleWrap p {
-  font-family: 'Gilroy', sans-serif;
+  font-family: 'Gilroy-Regular', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -71,7 +71,7 @@
 
 .title {
   margin: 0 0 10px;
-  font-family: 'Gilroy', sans-serif;
+  font-family: 'Gilroy-SemiBold', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -110,8 +110,8 @@
 }
 
 .decorArrow {
-  top: -40px;
-  right: 110px;
+  top: -44px;
+  right: 116px;
 }
 
 .decorLock {

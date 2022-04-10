@@ -21,7 +21,7 @@ const Footer = () => (
       </ul>
     </div>
     <div className={classNames("container", styles.footerContainer)}>
-      <p>{content.INFO_TEXT}</p>
+      <p className={styles.footerInfo}>{content.INFO_TEXT}</p>
       <ul className={styles.mobileMenu}>
         {menu.navMenu.map((el, idx) => (
           <li key={idx}>
@@ -41,8 +41,8 @@ const Footer = () => (
     </div>
     <div className={classNames("container", styles.footerContainer)}>
       <hr />
-      <p>{content.RIGHTS_RESERVED_TEXT}</p>
-      <ul className={styles.socials}>
+      <p className={styles.rights}>{content.RIGHTS_RESERVED_TEXT}</p>
+      <ul className={styles.termsMenu}>
         {content.TERMS_MENU.map((el, idx) => (
           <li key={idx}>
             <a href={el.url} title={el.text} target={"_blank"}>
