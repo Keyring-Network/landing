@@ -22,7 +22,7 @@
 
 .titleWrap p {
   margin-left: 140px;
-  font-family: 'Gilroy', sans-serif;
+  font-family: 'Gilroy-Regular', sans-serif;
   font-size: 18px;
   line-height: 150%
 }
@@ -83,7 +83,7 @@
 
 .text {
   margin: 0 0 28px;
-  font-family: 'Gilroy', sans-serif;
+  font-family: 'Gilroy-Regular', sans-serif;
   font-size: 16px;
   line-height: 150%;
 }
