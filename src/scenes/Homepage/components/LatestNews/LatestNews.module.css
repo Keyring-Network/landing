@@ -20,9 +20,8 @@
 }
 
 .decorQuestion {
-  left: 320px;
-  bottom: -200px;
-  width: 104px;
+  left: 350px;
+  bottom: -218px;
 }
 
 .titleWrap {
@@ -128,6 +127,10 @@
 
 .newsBtn {
   margin: 80px auto 0;
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
 }
 
 @media (max-width: 1200px) {
