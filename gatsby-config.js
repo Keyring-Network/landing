@@ -42,13 +42,6 @@ module.exports = {
       options: {
         username: `@keyring`,
       }
-    },
-    {
-      resolve: 'gatsby-plugin-medium-feed',
-      options: {
-        userName: '@keyring',
-        name: 'MediumFeed',
-      },
     }
   ]
 }
