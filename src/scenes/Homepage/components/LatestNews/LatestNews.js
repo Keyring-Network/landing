@@ -10,31 +10,33 @@ import decor2 from "../../../../assets/images/decor/question.svg"
 import medium from "../../../../assets/images/medium-black.svg"
 
 const LatestNews = () => {
-  // const { node: blogpageContent } = data.allMediumPost.edges[0]
-  // const { data: pageData } = blogpageContent;
+
   const blogMediumQueryData = useStaticQuery(
     graphql`
-    query {
-      allMediumPost(sort: { fields: [createdAt], order: DESC }) {
-        edges {
-          node {
-            id
-            title
-            uniqueSlug
-            createdAt(formatString: "MMM YYYY")
-            virtuals {
-              previewImage {
-                imageId
+      query {
+        allMediumPost (limit: 3, sort: { fields: createdAt, order: DESC }) {
+          edges {
+            node {
+              id
+              title
+              uniqueSlug
+              createdAt(formatString: "DD MMM YYYY")
+              virtuals {
+                subtitle
+                readingTime
+                previewImage {
+                  imageId
+                }
               }
-            }
-            author {
-              name
+              author {
+                name
+              }
             }
           }
         }
       }
-    }
-  `)
+    `
+  )
 
   const blogs = blogMediumQueryData.allMediumPost.edges
 
@@ -46,45 +48,32 @@ const LatestNews = () => {
           <p>{content.DESCRIPTION}</p>
         </div>
         <div className={styles.postsWrap}>
-          <div className={styles.post}>
-            <div className={styles.imageWrap}>
-              <img src={postImage} alt=""/>
-            </div>
-            <div className={styles.info}>
-              <h4 className={styles.title}>How to use Keyring’s extention</h4>
-              <p className={styles.text}>I was amazed at how easy it was to use yours extention.</p>
-              <p className={styles.author}>Alex Rives</p>
-              <p className={styles.date}>March 5, 2022 • 5 min to read</p>
-              <img src={medium} className={styles.mediumIcon} alt="medum"/>
-            </div>
-          </div>
-          <div className={styles.post}>
-            <div className={styles.imageWrap}>
-              <img src={postImage} alt=""/>
-            </div>
-            <div className={styles.info}>
-              <h4 className={styles.title}>How to use Keyring’s extention</h4>
-              <p className={styles.text}>I was amazed at how easy it was to use yours extention.</p>
-              <p className={styles.author}>Alex Rives</p>
-              <p className={styles.date}>March 5, 2022 • 5 min to read</p>
-              <img src={medium} className={styles.mediumIcon} alt="medum"/>
-            </div>
-          </div>
-          <div className={styles.post}>
-            <div className={styles.imageWrap}>
-              <img src={postImage} alt=""/>
-            </div>
-            <div className={styles.info}>
-              <h4 className={styles.title}>How to use Keyring’s extention</h4>
-              <p className={styles.text}>I was amazed at how easy it was to use yours extention.</p>
-              <p className={styles.author}>Alex Rives</p>
-              <p className={styles.date}>March 5, 2022 • 5 min to read</p>
-              <img src={medium} className={styles.mediumIcon} alt="medum"/>
-            </div>
-          </div>
+          {blogs.map(({node}, idx) => {
+            return (
+              <a
+                href={`https://medium.com/@keyring/${node.uniqueSlug}`}
+                className={styles.post}
+                target={"_blank"}
+                key={idx}
+              >
+                <div className={styles.imageWrap}>
+                  <img src={`https://miro.medium.com/fit/c/400/400/${node.virtuals?.previewImage?.imageId}`} alt="medium post image"/>
+                </div>
+                <div className={styles.info}>
+                  <h4 className={styles.title}>{node.title}</h4>
+                  <p className={styles.text}>{node.virtuals.subtitle}</p>
+                  <p className={styles.author}>{node.author.name}</p>
+                  <p className={styles.date}>
+                    {node.createdAt} • {Math.ceil(node.virtuals.readingTime)} min to read
+                  </p>
+                  <img src={medium} className={styles.mediumIcon} alt="medum post"/>
+                </div>
+              </a>
+            )
+          })}
         </div>
         <Button
-          url={"https://medium.com"}
+          url={"https://medium.com/@keyring"}
           btnStyles={classNames("btn_whiteBorder", styles.newsBtn)}
           title={content.BTN_TEXT}
           target={"_blank"}

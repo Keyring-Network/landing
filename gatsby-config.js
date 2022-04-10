@@ -40,8 +40,8 @@ module.exports = {
     {
       resolve: `gatsby-source-medium`,
       options: {
-        username: `keyring`,
-      },
+        username: `@keyring`,
+      }
     }
   ]
 }
