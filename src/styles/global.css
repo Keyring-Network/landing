@@ -27,6 +27,10 @@ p {
   font-family: -apple-system, "Sora", sans-serif;
 }
 
+main {
+  padding: 136px 0 0;
+}
+
 p {
   letter-spacing: 0.02em;
 }
@@ -245,7 +249,17 @@ body, p {
   }
 }
 
+@media (max-width: 991px) {
+  main {
+    padding: 126px 0 0;
+  }
+}
+
 @media (max-width: 768px) {
+  main {
+    padding: 60px 0 0;
+  }
+
   .container {
     padding: 0 24px;
   }
