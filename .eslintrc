@@ -1,0 +1,7 @@
+{
+  "extends": ["airbnb"],
+  "rules": {
+    "react/function-component-definition": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+  }
+}
