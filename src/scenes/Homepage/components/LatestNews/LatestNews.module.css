@@ -73,11 +73,19 @@
 }
 
 .imageWrap {
+  overflow: hidden;
   border-bottom: 2px solid #0f2830;
+  height: 230px;
 }
 
 .imageWrap img {
   display: flex;
+  transition: all .4s;
+}
+
+.post:hover .imageWrap img {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .info {

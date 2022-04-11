@@ -57,7 +57,7 @@ const LatestNews = () => {
                 key={idx}
               >
                 <div className={styles.imageWrap}>
-                  <img src={`https://miro.medium.com/fit/c/400/400/${node.virtuals?.previewImage?.imageId}`} alt="medium post image"/>
+                  <img src={`https://miro.medium.com/fit/c/400/300/${node.virtuals?.previewImage?.imageId}`} alt="medium post image"/>
                 </div>
                 <div className={styles.info}>
                   <h4 className={styles.title}>{node.title}</h4>
