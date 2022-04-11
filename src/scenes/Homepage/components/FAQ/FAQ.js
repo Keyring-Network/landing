@@ -19,11 +19,12 @@ const FAQ = () => {
           </div>
           <div className={styles.faqAddons}>
             <h3 className={styles.faqAddon}>{content.FAQ_ADDON}</h3>
-            <a href={content.READ_DOCS} className={styles.link} target={"_blank"}>
+            <a href={content.READ_DOCS} className={classNames("link_colored", styles.link)} target={"_blank"}>
               <img src={download} alt="download"/>
               {content.DOWNLOAD_DOCS}
             </a>
-            <a href={content.LINK_DISCORD} className={styles.link} target={"_blank"}>
+            <br />
+            <a href={content.LINK_DISCORD} className={classNames("link_colored", styles.link)} target={"_blank"}>
               <img src={discord} alt="discord"/>
               {content.ASK_DISCORD}
             </a>
@@ -52,6 +53,7 @@ const FAQ = () => {
             <img src={download} alt="download"/>
             {content.DOWNLOAD_DOCS}
           </a>
+          <br />
           <a href={content.LINK_DISCORD} className={styles.link} target={"_blank"}>
             <img src={discord} alt="discord"/>
             {content.ASK_DISCORD}
