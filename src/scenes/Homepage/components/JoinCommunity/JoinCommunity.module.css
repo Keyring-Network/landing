@@ -88,20 +88,6 @@
   line-height: 150%;
 }
 
-.link {
-  font-family: 'Sora', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  background: linear-gradient(223.23deg, #2EE297 0.2%, #1DC9D4 78.23%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-}
-
 .link img {
   margin-left: 16px;
 }

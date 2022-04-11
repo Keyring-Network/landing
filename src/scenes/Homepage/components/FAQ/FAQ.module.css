@@ -18,6 +18,7 @@
   position: relative;
   margin: 0 0 32px;
   border: 2px solid transparent;
+  cursor: pointer;
 }
 
 .itemListContent {
@@ -88,21 +89,16 @@
 }
 
 .link {
-  display: flex;
   margin: 0 0 18px;
-  font-family: 'Sora', sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  background: linear-gradient(268.42deg, #2EE297 -5.41%, #1DC9D4 132%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
 }
 
 .link img {
   margin-right: 16px;
+}
+
+.link + br {
+  display: flex;
+  line-height: 100%;
 }
 
 .faqAddonsMobile {

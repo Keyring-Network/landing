@@ -37,7 +37,7 @@
   background: #ffffff;
   border: 2px solid transparent;
   transition: .4s;
-  cursor: default;
+  cursor: pointer;
 }
 
 .itemListWrap .itemList:before {
@@ -50,6 +50,7 @@
   height: inherit;
   background: linear-gradient(308.67deg, #2ee297 -15.91%, #1dc9d4 120.74%);
   border: 2px solid #0f2830;
+  transition: .4s;
   content: "";
 }
 
@@ -147,6 +148,10 @@
 
 .icon {
   margin-right: 28px;
+}
+
+.itemListWrap .icon stop {
+  transition: .4s;
 }
 
 .itemListWrap:hover .icon stop:first-child,

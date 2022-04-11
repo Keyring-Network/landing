@@ -16,7 +16,9 @@ const SignUp = () => (
           <h2>{content.TITLE} <br /><span>{content.TITLE_COLORED}</span></h2>
           <p>{content.DESCRIPTION}</p>
         </div>
-        <a href={content.BTN_URL} className={styles.btn} target={"_blank"}>{content.BTN_TEXT}</a>
+        <a href={content.BTN_URL} className={styles.btn} target={"_blank"}>
+          <span>{content.BTN_TEXT}</span>
+        </a>
       </div>
       <img src={labirinth} className={styles.labirinth} alt={"labirinth"}/>
     </div>

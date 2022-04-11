@@ -22,7 +22,7 @@ const JoinCommunity = () => (
               <div className={styles.icon}>{el.icon}</div>
               <div className={styles.title}>{el.title}</div>
               <div className={styles.text}>{el.text}</div>
-              <a href="/" className={styles.link}>
+              <a href="/" className={classNames("link_colored", styles.link)}>
                 {el.btn_text}
                 <img src={arrow} alt="follow"/>
               </a>

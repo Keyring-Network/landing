@@ -1,5 +1,10 @@
 .header {
-  position: relative;
+  /*position: relative;*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 7;
   padding: 40px 0;
   background: #0f2830;
 }
@@ -43,6 +48,11 @@
 .menu li:last-child a {
   padding: 16px 40px;
   border: 2px solid #ffffff;
+  opacity: 1;
+}
+
+.menu li:last-child:hover  a {
+  background: #1B4555;
 }
 
 .menu a {
@@ -93,7 +103,7 @@
 
 @media (max-width: 768px) {
   .header {
-    padding: 16px 0 0;
+    padding: 16px 0;
   }
 
   .header svg {
