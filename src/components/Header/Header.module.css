@@ -43,6 +43,11 @@
 .menu li:last-child a {
   padding: 16px 40px;
   border: 2px solid #ffffff;
+  opacity: 1;
+}
+
+.menu li:last-child:hover  a {
+  background: #1B4555;
 }
 
 .menu a {

@@ -20,9 +20,10 @@ const Hero = () => (
         <p className={styles.description}>{content.DESCRIPTION}</p>
         <Button
           url={content.CTA_BUTTON_URL}
-          btnStyles={classNames("btn_colorBorder", styles.heroBtn)}
+          btnStyles={classNames("button b-green", styles.heroBtn)}
           title={content.CTA_BUTTON}
         />
+
         <p className={styles.ctaText}>{content.CTA_TEXT}</p>
         <img src={padlock} className={styles.padlock} alt="padlock" />
         <img src={key} className={styles.key} alt="key" />

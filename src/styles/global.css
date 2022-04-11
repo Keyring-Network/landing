@@ -68,15 +68,11 @@ h3 span {
 
 a {
   cursor: pointer;
-  transition: .4s;
+  transition: all .4s;
 }
 
 a, a:hover {
   text-decoration: none;
-}
-
-a:hover {
-  opacity: .7;
 }
 
 ul, li {
@@ -97,6 +93,73 @@ body, p {
   font-family: "Gilroy-Regular", sans-serif;
 }
 
+.button:after {
+  background: #2c3e50;
+}
+
+.b-green span {
+  padding: 20px 48px;
+  border: 2px solid;
+  border-image-source: linear-gradient(223.23deg, #2EE297 0.2%, #1DC9D4 78.23%);
+  border-image: linear-gradient(to right, #2EE297, #1DC9D4) 1;
+  background: -webkit-linear-gradient(#2ee297, #1dc9d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.b-green, .b-green:before {
+  background: rgba(73,155,234,1);
+  background: -moz-linear-gradient(45deg, rgba(73,155,234,1) 0%, rgba(26,188,156,1) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(73,155,234,1) 0%, rgba(26,188,156,1) 100%);
+  background: -o-linear-gradient(45deg, rgba(73,155,234,1) 0%, rgba(26,188,156,1) 100%);
+  background: -ms-linear-gradient(45deg, rgba(73,155,234,1) 0%, rgba(26,188,156,1) 100%);
+  background: linear-gradient(45deg, rgba(73,155,234,1) 0%, rgba(26,188,156,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#1abc9c', GradientType=1 );
+}
+
+.button {
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  display: inline-flex;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(223.23deg, #2EE297 0.2%, #1DC9D4 78.23%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.button:hover {
+  background: #1b4555;
+  -webkit-background-clip: unset;
+}
+
+.button:before,
+.button:after {
+  position: absolute;
+  content: '';
+  display: block;
+  transition: all .5s;
+  z-index: -1;
+}
+
+.button:before {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+.button:after {
+  left: 2px;
+  top: 2px;
+  bottom: 2px;
+  right: 2px;
+}
+
 .btn_colorBorder {
   display: flex;
   align-content: center;
@@ -104,10 +167,10 @@ body, p {
   padding: 20px;
   width: 248px;
   height: 64px;
-  border: 2px solid;
-  border-image-source: linear-gradient(223.23deg, #2EE297 0.2%, #1DC9D4 78.23%);
-  border-image: linear-gradient(to right, #2EE297, #1DC9D4) 1;
-  background: -webkit-linear-gradient(#2ee297, #1dc9d4);
+  /*border: 2px solid;*/
+  /*border-image-source: linear-gradient(223.23deg, #2EE297 0.2%, #1DC9D4 78.23%);*/
+  /*border-image: linear-gradient(to right, #2EE297, #1DC9D4) 1;*/
+  /*background: -webkit-linear-gradient(#2ee297, #1dc9d4);*/
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

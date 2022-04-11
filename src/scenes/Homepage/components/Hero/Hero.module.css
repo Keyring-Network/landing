@@ -21,14 +21,13 @@
   line-height: 150%;
 }
 
-.heroText .heroBtn {
-  display: inline-flex;
-  margin: 0 0 24px;
-}
-
 .heroText .ctaText {
   font-size: 16px;
   opacity: .6;
+}
+
+.heroBtn {
+  margin: 0 0 24px;
 }
 
 .heroImageWrap {
