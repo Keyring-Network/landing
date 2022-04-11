@@ -41,6 +41,10 @@
   margin-left: 56px;
 }
 
+.menu li a {
+  position: relative;
+}
+
 .menu li:last-child {
   margin-left: 136px;
 }
@@ -51,8 +55,25 @@
   opacity: 1;
 }
 
+.menu li:not(:last-child) a:after {
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  display: flex;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(268.42deg, #2EE297 -5.41%, #1DC9D4 132%);
+  content: "";
+  opacity: 0;
+  transition: all .4s;
+}
+
 .menu li:last-child:hover  a {
   background: #1B4555;
+}
+
+.menu li a.active:after {
+  opacity: 1;
 }
 
 .menu a {

@@ -133,6 +133,10 @@
   line-height: 23px;
 }
 
+.newsBtn:hover {
+  background: #1b4555;
+}
+
 @media (max-width: 1200px) {
   .info {
     padding: 18px;
