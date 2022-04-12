@@ -1,17 +1,43 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
 import classNames from 'classnames/bind';
+import { useWindowScroll } from 'react-use';
+
 import MobileMenu from './components/MobileMenu';
 import * as menu from '../../constants/navMenu';
 import * as styles from './Header.module.css';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolledDown, setScrollDown] = useState(false);
+  const { y: verticalScrollCoordinate } = useWindowScroll();
+
+  useEffect(() => {
+    if (!verticalScrollCoordinate) {
+      setScrollDown(false);
+    }
+
+    if (isScrolledDown) {
+      return;
+    }
+
+    if (verticalScrollCoordinate) {
+      setScrollDown(true);
+    }
+  }, [verticalScrollCoordinate]);
 
   const onCLickMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className={classNames(styles.header, isOpen && styles.headerOpen)}>
+    <header
+      className={
+        classNames(
+          styles.header,
+          isOpen && styles.headerOpen,
+          isScrolledDown && styles.scrolledHeader,
+        )
+      }
+    >
       <div className={classNames('container', styles.container)}>
         <Link to="/">
           <svg xmlns="http://www.w3.org/2000/svg" width="152" height="42" viewBox="0 0 152 42" fill="none">
