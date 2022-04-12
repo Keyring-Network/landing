@@ -33,8 +33,8 @@ const WhatWeDo = () => {
               <div className={classNames(styles.itemListImageWrap)}>
                 <div className={classNames(styles.itemListImage)}>
                   <img src={el.img} className={styles.mainImg} alt="diagram" loading="lazy" />
-                  <img src={decor1} className={styles.decorArrow} alt="diagram" loading="lazy" />
-                  <img src={decor2} className={styles.decorLock} alt="diagram" loading="lazy" />
+                  <img src={decor1} className={styles.decorArrow} alt="decor icon" loading="lazy" />
+                  <img src={decor2} className={styles.decorLock} alt="decor icon" loading="lazy" />
                 </div>
               </div>
               <div className={classNames(styles.itemList)}>
