@@ -1,12 +1,22 @@
+/* stylelint-disable color-function-notation */
+/* stylelint-disable alpha-value-notation */
+/* stylelint-disable property-no-vendor-prefix */
+/* stylelint-disable order/properties-order */
 .header {
-  position: relative;
-  /*position: fixed;*/
-  /*top: 0;*/
-  /*left: 0;*/
-  /*width: 100%;*/
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 7;
+  width: 100%;
   padding: 40px 0;
   background: #0f2830;
+}
+
+.scrolledHeader {
+  padding: 10px 0;
+  background: rgba(15, 40, 48, 0.84);
+  backdrop-filter: blur(44px);
+  -webkit-backdrop-filter: blur(44px);
 }
 
 .headerOpen svg {
@@ -21,13 +31,13 @@
 .headerOpen svg path:nth-child(7),
 .headerOpen svg path:nth-child(8),
 .headerOpen svg path:nth-child(9) {
-  fill: #0f2830!important
+  fill: #0f2830 !important;
 }
 
 .container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .menu {
@@ -39,41 +49,6 @@
 
 .menu li {
   margin-left: 56px;
-}
-
-.menu li a {
-  position: relative;
-}
-
-.menu li:last-child {
-  margin-left: 136px;
-}
-
-.menu li:last-child a {
-  padding: 16px 40px;
-  border: 2px solid #ffffff;
-  opacity: 1;
-}
-
-.menu li:not(:last-child) a:after {
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  display: flex;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(268.42deg, #2EE297 -5.41%, #1DC9D4 132%);
-  content: "";
-  opacity: 0;
-  transition: all .4s;
-}
-
-.menu li:last-child:hover  a {
-  background: #1B4555;
-}
-
-.menu li a.active:after {
-  opacity: 1;
 }
 
 .menu a {
@@ -88,8 +63,43 @@
   text-align: center;
 }
 
+.menu li a {
+  position: relative;
+}
+
 .menu a:hover {
   opacity: 1;
+}
+
+.menu li:last-child {
+  margin-left: 136px;
+}
+
+.menu li:last-child a {
+  padding: 16px 40px;
+  border: 2px solid #fff;
+  opacity: 1;
+}
+
+.menu li:last-child:hover a {
+  background: #1b4555;
+}
+
+.menu li a.active::after {
+  opacity: 1;
+}
+
+.menu li:not(:last-child) a:hover::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(268.42deg, #2ee297 -5.41%, #1dc9d4 132%);
+  opacity: 1;
+  transition: all 0.4s;
+  content: "";
 }
 
 @media (max-width: 1400px) {
