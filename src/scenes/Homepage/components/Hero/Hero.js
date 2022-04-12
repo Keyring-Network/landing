@@ -5,6 +5,10 @@ import { StaticImage } from 'gatsby-plugin-image';
 import * as styles from './Hero.module.css';
 import * as content from '../../../../constants/content/hero';
 import Button from '../../../../components/Button';
+import padlock from "../../../../assets/images/padlock.svg"
+import key from "../../../../assets/images/key.svg"
+import anonMask from "../../../../assets/images/anon-mask.svg"
+import shield from "../../../../assets/images/shield.svg"
 
 const Hero = () => (
   <div className={styles.hero}>
@@ -23,10 +27,14 @@ const Hero = () => (
         />
 
         <p className={styles.ctaText}>{content.CTA_TEXT}</p>
-        <StaticImage src="../../../../assets/images/padlock.svg" className={styles.padlock} alt="padlock" placeholder="blurred" loading="eager" />
+        {/* <StaticImage src="../../../../assets/images/padlock.svg" className={styles.padlock} alt="padlock" placeholder="blurred" loading="eager" />
         <StaticImage src="../../../../assets/images/key.svg" className={styles.key} alt="key" placeholder="blurred" loading="eager" />
         <StaticImage src="../../../../assets/images/anon-mask.svg" className={styles.anonMask} alt="anon mask" placeholder="blurred" loading="eager" />
-        <StaticImage src="../../../../assets/images/shield.svg" className={styles.shield} alt="shield" placeholder="blurred" loading="eager" />
+        <StaticImage src="../../../../assets/images/shield.svg" className={styles.shield} alt="shield" placeholder="blurred" loading="eager" /> */}
+        <img src={padlock} className={styles.padlock} alt="padlock" />
+        <img src={key} className={styles.key} alt="key" />
+        <img src={anonMask} className={styles.anonMask} alt="anon mask" />
+        <img src={shield} className={styles.shield} alt="shield" />
       </div>
     </div>
   </div>
