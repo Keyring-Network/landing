@@ -41,7 +41,7 @@ const LatestNews = () => {
   const blogs = blogMediumQueryData.allMediumPost.edges
 
   return (
-    <div id={"news"} className={styles.newsWrap}>
+    <div id="news" className={styles.newsWrap}>
       <div className={classNames("container", styles.newsContainer)}>
         <div className={styles.titleWrap}>
           <h2>{content.TITLE} <span>{content.TITLE_COLORED}</span></h2>
@@ -53,11 +53,11 @@ const LatestNews = () => {
               <a
                 href={`https://medium.com/@keyring/${node.uniqueSlug}`}
                 className={styles.post}
-                target={"_blank"}
-                key={idx}
+                target="_blank"
+                key={node.title}
               >
                 <div className={styles.imageWrap}>
-                  <img src={`https://miro.medium.com/fit/c/400/300/${node.virtuals?.previewImage?.imageId}`} alt="medium post image"/>
+                  <img src={`https://miro.medium.com/fit/c/400/400/${node.virtuals?.previewImage?.imageId}`} alt="medium post image" loading="lazy" />
                 </div>
                 <div className={styles.info}>
                   <h4 className={styles.title}>{node.title}</h4>
@@ -66,17 +66,17 @@ const LatestNews = () => {
                   <p className={styles.date}>
                     {node.createdAt} • {Math.ceil(node.virtuals.readingTime)} min to read
                   </p>
-                  <img src={medium} className={styles.mediumIcon} alt="medum post"/>
+                  <img src={medium} className={styles.mediumIcon} alt="medum post" loading="lazy" />
                 </div>
               </a>
             )
           })}
         </div>
         <Button
-          url={"https://medium.com/@keyring"}
+          url="https://medium.com/@keyring"
           btnStyles={classNames("btn_whiteBorder", styles.newsBtn)}
           title={content.BTN_TEXT}
-          target={"_blank"}
+          target="_blank"
         />
         <img src={decor1} className={styles.decorEllipse} alt={"diagram"} />
         <img src={decor2} className={styles.decorQuestion} alt={"diagram"} />

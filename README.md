@@ -1,54 +1,26 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/22400fab-f1b3-474c-a6d5-a0bc46892a3d/deploy-status)](https://app.netlify.com/sites/keyring-landing/deploys)
 
-## 🚀 Quick start
+This is Keyring web-site built with Gatsby. To run project on your machine, clone repository:
 
-1.  **Create a Gatsby site.**
+```
+git clone git@github.com:Halo-Lab/keyring.git
+```
+Then go to project directory and install dependencies:
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+```
+make install
+```
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+And start project:
 
-2.  **Start developing.**
+```
+make start
+```
 
-    Navigate into your new site’s directory and start it up.
+You can serve production version locally by running:
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+```
+make serve
+```
 
-3.  **Open the code and start customizing!**
-
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+If you want build site, run `make build`. To clean cache, run `make clean`.
