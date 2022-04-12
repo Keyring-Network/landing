@@ -1,3 +1,7 @@
+/* stylelint-disable color-function-notation */
+/* stylelint-disable alpha-value-notation */
+/* stylelint-disable property-no-vendor-prefix */
+/* stylelint-disable order/properties-order */
 .header {
   position: fixed;
   top: 0;
@@ -10,10 +14,9 @@
 
 .scrolledHeader {
   padding: 10px 0;
-  background: rgba(15 40 48 "84%");
-  /* stylelint-disable-next-line property-no-vendor-prefix */
-  -webkit-backdrop-filter: blur(44px);
+  background: rgba(15, 40, 48, 0.84);
   backdrop-filter: blur(44px);
+  -webkit-backdrop-filter: blur(44px);
 }
 
 .headerOpen svg {
