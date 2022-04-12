@@ -74,9 +74,12 @@ a {
   transition: all .4s;
 }
 
-a, a:hover {
+a, a:hover,
+a:focus, a:active {
   text-decoration: none;
   cursor: pointer;
+  outline: none;
+  border: none
 }
 
 ul, li {
