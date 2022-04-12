@@ -82,6 +82,12 @@ a:focus, a:active {
   border: none
 }
 
+li:focus, li:active,
+div:focus, div:active {
+  outline: none;
+  border: none
+}
+
 ul, li {
   list-style: none;
 }
