@@ -1,5 +1,5 @@
 .partnersWrap {
-  padding: 153px 0 163px;
+  padding: 153px 0 116px;
 }
 
 .container {
@@ -8,7 +8,7 @@
 
 .titleWrap {
   margin: 0 0 64px;
-  padding-left: 50%;
+  padding-left: 55%;
 }
 
 .titleWrap h2 {
@@ -24,16 +24,15 @@
 }
 
 .itemListWrap {
-  padding-left: 50%;
+  padding-left: 55%;
 }
 
 .itemList {
   position: relative;
   display: flex;
-  margin: 0 0 48px;
-  padding: 32px;
+  margin: 0 0 40px;
+  padding: 0 32px;
   width: 100%;
-  /*height: 170px;*/
   background: #ffffff;
   border: 2px solid transparent;
   transition: .4s;
@@ -55,19 +54,22 @@
 }
 
 .itemListWrap.active .itemList,
-.itemListWrap:hover .itemList {
+.itemListWrap .itemList:hover {
   border-color: #0f2830;
+  padding: 32px;
 }
 
 .itemListWrap.active .itemList:before,
-.itemListWrap:hover .itemList:before {
+.itemListWrap .itemList:hover:before {
   display: flex;
 }
 
 .itemListWrap.active .text,
-.itemListWrap:hover .text {
+.itemListWrap .itemList:hover .text {
   height: auto;
   opacity: 1;
+  display: block;
+  visibility: visible;
 }
 
 .title {
@@ -80,11 +82,13 @@
 }
 
 .text {
-  margin: 10px 0;
+  margin: 14px 0 0;
   font-weight: 400;
-  /*height: 0;*/
+  display: none;
+  visibility: hidden;
   opacity: 0;
   transition: all ease .4s;
+  line-height: 150%;
 }
 
 .itemListImageWrap {
@@ -148,34 +152,35 @@
 
 .icon {
   margin-right: 28px;
+  width: 35px;
 }
 
 .itemListWrap .icon stop {
   transition: .4s;
 }
 
-.itemListWrap:hover .icon stop:first-child,
+.itemListWrap .itemList:hover .icon stop:first-child,
 .itemListWrap.active .icon stop:first-child {
   stop-color: #2EE297;
 }
 
-.itemListWrap:hover .icon stop:last-child,
+.itemListWrap .itemList:hover .icon stop:last-child,
 .itemListWrap.active .icon stop:last-child {
   stop-color: #1DC9D4;
 }
 
 @media (max-width: 1400px) {
-  .titleWrap,
-  .itemListWrap {
-    padding-left: 55%;
-  }
-
   .itemListImageWrap {
     left: 52px;
   }
 }
 
 @media (max-width: 1200px) {
+  .titleWrap,
+  .itemListWrap {
+    padding-left: 50%;
+  }
+
   .itemListImageWrap {
     left: 52px;
     max-width: 480px;
