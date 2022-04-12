@@ -76,12 +76,15 @@ const LatestNews = () => {
             )
           })}
         </div>
-        <Button
+        <a
           url="https://medium.com/@keyring"
-          btnStyles={classNames("btn_whiteBorder", styles.newsBtn)}
+          className={classNames("btn_whiteBorder", styles.newsBtn)}
           title={content.BTN_TEXT}
+          rel="noreferrer"
           target="_blank"
-        />
+        >
+          {content.BTN_TEXT}
+        </a>
         <img src={decor1} className={styles.decorEllipse} alt={"diagram"} />
         <img src={decor2} className={styles.decorQuestion} alt={"diagram"} />
       </div>
