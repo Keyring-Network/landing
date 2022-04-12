@@ -1,12 +1,13 @@
 .header {
-  position: relative;
-  /*position: fixed;*/
-  /*top: 0;*/
-  /*left: 0;*/
-  /*width: 100%;*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 7;
-  padding: 40px 0;
-  background: #0f2830;
+  padding: 10px 0;
+  background: rgba(15, 40, 48, 0.84);
+  backdrop-filter: blur(44px);
+  -webkit-backdrop-filter: blur(44px);
 }
 
 .headerOpen svg {
