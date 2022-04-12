@@ -17,7 +17,8 @@ export const SOCIAL_LIST = [
     </svg>,
     title: "Twitter",
     text: "Photo, news and many more about our company.",
-    btn_text: "Follow us"
+    btn_text: "Follow us",
+    btn_url: "https://twitter.com",
   },
   {
     icon: <svg xmlns={"http://www.w3.org/2000/svg"} width={"49"} height={"48"} viewBox={"0 0 49 48"} fill={"none"}>
@@ -32,7 +33,8 @@ export const SOCIAL_LIST = [
     </svg>,
     title: "Discord",
     text: "Chat, discussions and many more about our company.",
-    btn_text: "Request to join the server"
+    btn_text: "Request to join the server",
+    btn_url: "https://keyring.network",
   },
   {
     icon: <svg xmlns={"http://www.w3.org/2000/svg"} width={"49"} height={"48"} viewBox={"0 0 49 48"} fill={"none"}>
@@ -42,6 +44,7 @@ export const SOCIAL_LIST = [
     </svg>,
     title: "Medium",
     text: "News, articles and many more about our company.",
-    btn_text: "Read more"
+    btn_text: "Read more",
+    btn_url: "https://medium.com/@keyring",
   },
 ]

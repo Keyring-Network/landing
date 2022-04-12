@@ -27,6 +27,11 @@
   max-width: 120px;
 }
 
+.logosWrap .logo:hover {
+  cursor: pointer;
+  opacity: .7;
+}
+
 .partnersWrap h3 {
   font-size: 32px;
 }
