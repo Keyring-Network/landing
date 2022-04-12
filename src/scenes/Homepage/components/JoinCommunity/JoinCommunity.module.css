@@ -42,7 +42,6 @@
   flex-direction: column;
   flex-shrink: 0;
   background: #ffffff;
-  border: 2px solid #0f2830;
 }
 
 .community:last-child {
@@ -67,6 +66,7 @@
   padding: 40px 32px;
   height: -webkit-fill-available;
   background: #ffffff;
+  border: 2px solid #0f2830;
 }
 
 .icon {
