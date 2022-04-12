@@ -78,8 +78,8 @@ const LatestNews = () => {
           title={content.BTN_TEXT}
           target="_blank"
         />
-        <img src={decor1} className={styles.decorEllipse} alt={"diagram"} />
-        <img src={decor2} className={styles.decorQuestion} alt={"diagram"} />
+        <img src={decor1} className={styles.decorEllipse} alt="diagram" loading="lazy" />
+        <img src={decor2} className={styles.decorQuestion} alt="diagram" loading="lazy" />
       </div>
     </div>
   )
