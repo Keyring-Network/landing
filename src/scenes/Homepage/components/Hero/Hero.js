@@ -19,11 +19,15 @@ const Hero = () => (
           {content.TITLE_LAST}
         </h1>
         <p className={styles.description}>{content.DESCRIPTION}</p>
-        <Button
-          url={content.CTA_BUTTON_URL}
-          btnStyles={classNames('button b-green', styles.heroBtn)}
+        <a
+          href={content.CTA_BUTTON_URL}
+          className={classNames('button b-green', styles.heroBtn)}
           title={content.CTA_BUTTON}
-        />
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span>{content.CTA_BUTTON}</span>
+        </a>
 
         <p className={styles.ctaText}>{content.CTA_TEXT}</p>
         <img src={padlock} className={styles.padlock} alt="padlock" loading="eager" />

@@ -79,13 +79,11 @@ a:focus, a:active {
   text-decoration: none;
   cursor: pointer;
   outline: none;
-  border: none
 }
 
 li:focus, li:active,
 div:focus, div:active {
   outline: none;
-  border: none
 }
 
 ul, li {
@@ -127,13 +125,6 @@ body, p {
   line-height: 23px;
   display: inline-flex;
   position: relative;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background: linear-gradient(223.23deg, #2EE297 0.2%, #1DC9D4 78.23%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
 }
 
 .button:hover {
@@ -171,10 +162,6 @@ body, p {
   padding: 20px;
   width: 248px;
   height: 64px;
-  /*border: 2px solid;*/
-  /*border-image-source: linear-gradient(223.23deg, #2EE297 0.2%, #1DC9D4 78.23%);*/
-  /*border-image: linear-gradient(to right, #2EE297, #1DC9D4) 1;*/
-  /*background: -webkit-linear-gradient(#2ee297, #1dc9d4);*/
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -188,6 +175,10 @@ body, p {
   height: 64px;
   border: 2px solid #ffffff;
   color: #ffffff;
+}
+
+.btn_whiteBorder:hover {
+  background: #1b4555;
 }
 
 .link_colored {
