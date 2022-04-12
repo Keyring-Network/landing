@@ -1,15 +1,10 @@
-import instagram from "../assets/images/instagram.svg"
 import discord from "../assets/images/discord.svg"
-import github from "../assets/images/github.svg"
+import twitter from "../assets/images/twitter.svg"
 import medium from "../assets/images/medium.svg"
 
 export const INFO_TEXT = "Access verified TradFi-backed trading pools with Keyring's protocol-agnostic whitelisting and AML/KYC."
 export const RIGHTS_RESERVED_TEXT = "2022 Keyring Network © All rights reserved"
 export const SOCIAL = [
-  {
-    icon: instagram,
-    url: "/"
-  },
   {
     icon: medium,
     url: "/"
@@ -19,7 +14,7 @@ export const SOCIAL = [
     url: "/"
   },
   {
-    icon: github,
+    icon: twitter,
     url: "/"
   }
 ]
