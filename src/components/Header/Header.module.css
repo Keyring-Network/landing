@@ -17,6 +17,7 @@
   background: rgba(15, 40, 48, 0.84);
   backdrop-filter: blur(44px);
   -webkit-backdrop-filter: blur(44px);
+  transition: all 1s;
 }
 
 .headerOpen svg {
