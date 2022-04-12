@@ -12,7 +12,8 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "eslint": "eslint --fix src/"
+    "eslint": "eslint --fix src/",
+    "stylelint": "npx stylelint '**/*.css'"
   },
   "dependencies": {
     "classnames": "^2.3.1",
@@ -37,6 +38,9 @@
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^19.0.4",
-    "postcss-scss": "^4.0.3"
+    "postcss-scss": "^4.0.3",
+    "stylelint": "^14.6.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^25.0.0"
   }
 }
