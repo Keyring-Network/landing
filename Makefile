@@ -5,7 +5,7 @@ build:
 	npm run build
 
 serve: build
-	npm run serv
+	npm run serve
 
 clean:
 	npm run clean
