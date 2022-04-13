@@ -94,6 +94,7 @@ img {
   margin: auto;
   padding: 0 104px;
   max-width: 1440px;
+  width: 100%;
 }
 
 body, p {
@@ -215,6 +216,21 @@ body, p {
 .flex {
   display: flex;
 }
+
+
+
+@media (max-height: 700px) {
+  h1 {
+    font-size: 44px;
+  }
+}
+
+@media (max-height: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
 
 @media (max-width: 1400px) {
   .container {

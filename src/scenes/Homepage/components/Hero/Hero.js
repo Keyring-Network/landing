@@ -1,13 +1,13 @@
 import React from 'react';
 import classNames from 'classnames/bind';
 import { StaticImage } from 'gatsby-plugin-image';
-
+import Partners from '../Partners';
 import * as styles from './Hero.module.css';
 import * as content from '../../../../constants/content/hero';
 
 const Hero = () => (
   <div className={styles.hero}>
-    <div className="container">
+    <div className={classNames("container", styles.container)}>
       <div className={styles.heroText}>
         <h1>
           {content.TITLE}
@@ -27,18 +27,39 @@ const Hero = () => (
 
         <p className={styles.ctaText}>{content.CTA_TEXT}</p>
         <div className={styles.padlock}>
-          <StaticImage src="../../../../assets/images/padlock.svg" alt="padlock" loading="eager" placeholder="tracedSVG" />
+          <StaticImage
+            src="../../../../assets/images/padlock.svg"
+            alt="padlock"
+            loading="eager"
+            placeholder="tracedSVG"
+          />
         </div>
         <div className={styles.key}>
-          <StaticImage src="../../../../assets/images/key.svg" alt="key" loading="eager" placeholder="tracedSVG" />
+          <StaticImage
+            src="../../../../assets/images/key.svg"
+            alt="key"
+            loading="eager"
+            placeholder="tracedSVG"
+          />
         </div>
         <div className={styles.anonMask}>
-          <StaticImage src="../../../../assets/images/anon-mask.svg" alt="anon mask" loading="eager" placeholder="tracedSVG" />
+          <StaticImage
+            src="../../../../assets/images/anon-mask.svg"
+            alt="anon mask"
+            loading="eager"
+            placeholder="tracedSVG"
+          />
         </div>
         <div className={styles.shield}>
-          <StaticImage src="../../../../assets/images/shield.svg" alt="shield" loading="eager" placeholder="tracedSVG" />
+          <StaticImage
+            src="../../../../assets/images/shield.svg"
+            alt="shield"
+            loading="eager"
+            placeholder="tracedSVG"
+          />
         </div>
       </div>
+      <Partners />
     </div>
   </div>
 );
