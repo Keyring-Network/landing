@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames/bind';
 import { StaticImage } from 'gatsby-plugin-image';
+import { Popup } from 'react-typeform-embed';
 
 import * as styles from './Hero.module.css';
 import * as content from '../../../../constants/content/hero';
@@ -15,16 +16,14 @@ const Hero = () => (
           {content.TITLE_LAST}
         </h1>
         <p className={styles.description}>{content.DESCRIPTION}</p>
-        <a
-          href={content.CTA_BUTTON_URL}
-          className={classNames('button b-green', styles.heroBtn)}
-          title={content.CTA_BUTTON}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <span>{content.CTA_BUTTON}</span>
-        </a>
-
+        <Popup id="PF5a05ot" size={80}>
+          <a
+            className={classNames('button b-green', styles.heroBtn)}
+            title={content.CTA_BUTTON}
+          >
+            <span>{content.CTA_BUTTON}</span>
+          </a>
+        </Popup>
         <p className={styles.ctaText}>{content.CTA_TEXT}</p>
         <div className={styles.padlock}>
           <StaticImage src="../../../../assets/images/padlock.svg" alt="padlock" loading="eager" placeholder="tracedSVG" />
