@@ -27,16 +27,16 @@ const Hero = () => (
 
         <p className={styles.ctaText}>{content.CTA_TEXT}</p>
         <div className={styles.padlock}>
-          <StaticImage src="../../../../assets/images/padlock.svg" alt="padlock" loading="eager" placeholder="blurred" />
+          <StaticImage src="../../../../assets/images/padlock.svg" alt="padlock" loading="eager" placeholder="tracedSVG" />
         </div>
         <div className={styles.key}>
-          <StaticImage src="../../../../assets/images/key.svg" alt="key" loading="eager" placeholder="blurred" />
+          <StaticImage src="../../../../assets/images/key.svg" alt="key" loading="eager" placeholder="tracedSVG" />
         </div>
         <div className={styles.anonMask}>
-          <StaticImage src="../../../../assets/images/anon-mask.svg" alt="anon mask" loading="eager" placeholder="blurred" />
+          <StaticImage src="../../../../assets/images/anon-mask.svg" alt="anon mask" loading="eager" placeholder="tracedSVG" />
         </div>
         <div className={styles.shield}>
-          <StaticImage src="../../../../assets/images/shield.svg" alt="shield" loading="eager" placeholder="blurred" />
+          <StaticImage src="../../../../assets/images/shield.svg" alt="shield" loading="eager" placeholder="tracedSVG" />
         </div>
       </div>
     </div>
