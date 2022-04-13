@@ -91,7 +91,7 @@
   opacity: 1;
 }
 
-.menu li:not(:last-child) a:hover::after {
+.active::after {
   position: absolute;
   bottom: -4px;
   left: 0;
