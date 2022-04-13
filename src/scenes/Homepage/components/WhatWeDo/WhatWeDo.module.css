@@ -8,8 +8,6 @@
 
 .titleWrap {
   margin: 0 0 64px 40px;
-  padding-left: 55%;
-  width: calc(100% - 40px);
 }
 
 .titleWrap h2 {
@@ -24,8 +22,10 @@
   line-height: 150%;
 }
 
-.itemListWrap {
-  padding-left: 55%;
+.contentWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .itemList {
@@ -54,19 +54,16 @@
   content: "";
 }
 
-.itemListWrap.active .itemList,
-.itemListWrap .itemList:hover {
+.itemListWrap.active .itemList {
   border-color: #0f2830;
   padding: 32px;
 }
 
-.itemListWrap.active .itemList:before,
-.itemListWrap .itemList:hover:before {
+.itemListWrap.active .itemList:before  {
   display: flex;
 }
 
-.itemListWrap.active .text,
-.itemListWrap .itemList:hover .text {
+.itemListWrap.active .text {
   height: auto;
   opacity: 1;
   display: block;
@@ -92,20 +89,12 @@
   line-height: 150%;
 }
 
-.itemListImageWrap {
-  position: absolute;
-  top: 32px;
-  left: 105px;
-  display: none;
-}
-
-.itemListImageWrap .mainImg {
-  display: flex;
-  height: fit-content;
-}
-
-.itemListImage {
+.imageWrap {
   position: relative;
+  margin-right: 100px;
+}
+
+.image {
   border: 2px solid #0f2830;
   width: 540px;
   height: 540px;
@@ -130,7 +119,7 @@
   bottom: -44px;
 }
 
-.itemListImageWrap:before {
+.imageWrap:before {
   position: absolute;
   right: -11px;
   bottom: -12px;
@@ -143,13 +132,7 @@
   content: "";
 }
 
-.itemListWrap.active .itemListImageWrap {
-  display: flex;
-  visibility: visible;
-  opacity: 1;
-}
-
-.itemListImageWrap .mainImg {
+.imageWrap .mainImg {
   position: relative;
   z-index: 2;
   width: inherit;
@@ -175,24 +158,16 @@
   stop-color: #1DC9D4;
 }
 
-@media (max-width: 1400px) {
-  .itemListImageWrap {
-    left: 52px;
-  }
+.imageWrapMobile {
+  display: none
 }
 
 @media (max-width: 1200px) {
-  .titleWrap,
-  .itemListWrap {
-    padding-left: 50%;
+  .imageWrap {
+    margin-right: 60px;
   }
 
-  .itemListImageWrap {
-    left: 52px;
-    /*width: 480px;*/
-  }
-
-  .itemListImage {
+  .image {
     width: 440px;
     height: 440px;
   }
@@ -203,9 +178,33 @@
     padding: 58px 0;
   }
 
+  .titleWrap {
+    margin-left: 0;
+  }
+
   .titleWrap,
   .itemListWrap {
     padding: 0;
+  }
+
+  .imageWrap {
+    display: none;
+  }
+
+  .imageWrap.imageWrapMobile {
+    display: flex;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .imageWrapMobile {
+    margin: 0 auto 60px;
+    width: 440px;
+    height: 440px;
   }
 
   .itemListWrap {
@@ -222,12 +221,11 @@
     padding: 16px 16px 24px;
   }
 
-  .itemListWrap.active,
-  .itemListWrap:hover {
+  .itemListWrap.active {
     border: 2px solid #0f2830;
   }
 
-  .itemListWrap.active .itemListImage:before {
+  .itemListWrap.active .image:before {
     display: none;
   }
 
@@ -237,12 +235,10 @@
     border: none;
   }
 
-  .itemListWrap .itemList.active:before,
-  .itemListWrap .itemList:hover:before {
+  .itemListWrap .itemList.active:before {
     display: none;
   }
 
-  .itemListWrap:hover:before,
   .itemListWrap.active:before {
     position: absolute;
     right: -12px;
@@ -256,21 +252,6 @@
     content: "";
   }
 
-  .itemListImageWrap {
-    position: relative;
-    top: initial;
-    left: initial;
-    margin: auto;
-    order: 2;
-    width: initial;
-    height: initial;
-    border: none;
-  }
-
-  .itemListImageWrap .mainImg {
-    height: fit-content;
-  }
-
   .title {
     font-size: 14px;
   }
@@ -282,14 +263,6 @@
   .icon svg {
     width: 24px;
     height: 24px;
-  }
-
-  .itemListImageWrap {
-    padding: 16px;
-  }
-
-  .itemListImageWrap:before {
-    display: none;
   }
 
   .decorArrow {
@@ -306,15 +279,35 @@
 }
 
 @media (max-width: 575px) {
-  .itemListImage {
+  .imageWrapMobile {
     width: 360px;
     height: 360px;
+  }
+
+  .itemListWrap {
+    padding: 16px;
+    width: calc(100% - 20px);
+  }
+
+  .itemList {
+    padding: 0;
+    width: 100%;
+  }
+
+  .itemListWrap.active .itemList {
+    padding: 0;
+  }
+
+  .imageWrap:before,
+  .itemListWrap.active:before {
+    right: -7px;
+    bottom: -7px;
   }
 }
 
 @media (max-width: 480px) {
-  .itemListImage {
-    width: 240px;
-    height: 240px;
+  .imageWrapMobile {
+    width: 260px;
+    height: 260px;
   }
 }
