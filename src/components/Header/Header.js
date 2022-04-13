@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
 import classNames from 'classnames/bind';
 import { useWindowScroll } from 'react-use';
+import { globalHistory as history } from '@reach/router';
 
 import MobileMenu from './components/MobileMenu';
 import * as menu from '../../constants/navMenu';
@@ -27,6 +28,8 @@ const Header = () => {
   }, [verticalScrollCoordinate]);
 
   const onCLickMenu = () => setIsOpen(!isOpen);
+
+  const { location: { hash } } = history;
 
   return (
     <header
@@ -67,7 +70,13 @@ const Header = () => {
         <ul className={styles.menu}>
           {menu.navMenu.map((el) => (
             <li key={el.text}>
-              <Link to={el.url} title={el.text}>{el.text}</Link>
+              <Link
+                to={el.url}
+                title={el.text}
+                className={classNames({ [styles.active]: el.url === hash && hash !== '#join-waitlist' })}
+              >
+                {el.text}
+              </Link>
             </li>
           ))}
         </ul>

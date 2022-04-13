@@ -1,13 +1,9 @@
 import React from 'react';
 import classNames from 'classnames/bind';
+import { StaticImage } from 'gatsby-plugin-image';
 
 import * as styles from './Hero.module.css';
 import * as content from '../../../../constants/content/hero';
-import Button from '../../../../components/Button';
-import padlock from '../../../../assets/images/padlock.svg';
-import key from '../../../../assets/images/key.svg';
-import anonMask from '../../../../assets/images/anon-mask.svg';
-import shield from '../../../../assets/images/shield.svg';
 
 const Hero = () => (
   <div className={styles.hero}>
@@ -30,10 +26,18 @@ const Hero = () => (
         </a>
 
         <p className={styles.ctaText}>{content.CTA_TEXT}</p>
-        <img src={padlock} className={styles.padlock} alt="padlock" loading="eager" />
-        <img src={key} className={styles.key} alt="key" loading="eager" />
-        <img src={anonMask} className={styles.anonMask} alt="anon mask" loading="eager" />
-        <img src={shield} className={styles.shield} alt="shield" loading="eager" />
+        <div className={styles.padlock}>
+          <StaticImage src="../../../../assets/images/padlock.svg" alt="padlock" loading="eager" placeholder="tracedSVG" />
+        </div>
+        <div className={styles.key}>
+          <StaticImage src="../../../../assets/images/key.svg" alt="key" loading="eager" placeholder="tracedSVG" />
+        </div>
+        <div className={styles.anonMask}>
+          <StaticImage src="../../../../assets/images/anon-mask.svg" alt="anon mask" loading="eager" placeholder="tracedSVG" />
+        </div>
+        <div className={styles.shield}>
+          <StaticImage src="../../../../assets/images/shield.svg" alt="shield" loading="eager" placeholder="tracedSVG" />
+        </div>
       </div>
     </div>
   </div>
