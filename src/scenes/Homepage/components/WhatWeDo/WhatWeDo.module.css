@@ -7,8 +7,9 @@
 }
 
 .titleWrap {
-  margin: 0 0 64px;
+  margin: 0 0 64px 40px;
   padding-left: 55%;
+  width: calc(100% - 40px);
 }
 
 .titleWrap h2 {
@@ -30,9 +31,9 @@
 .itemList {
   position: relative;
   display: flex;
-  margin: 0 0 40px;
+  margin: 0 0 40px 40px;
   padding: 0 32px;
-  width: 100%;
+  width: calc(100% - 40px);
   background: #ffffff;
   border: 2px solid transparent;
   transition: .4s;
@@ -106,6 +107,11 @@
 .itemListImage {
   position: relative;
   border: 2px solid #0f2830;
+  width: 540px;
+  height: 540px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .decorArrow,
@@ -124,11 +130,11 @@
   bottom: -44px;
 }
 
-.itemListImage:before {
+.itemListImageWrap:before {
   position: absolute;
   right: -11px;
   bottom: -12px;
-  z-index: 1;
+  z-index: -1;
   display: flex;
   width: 60%;
   height: 60%;
@@ -183,8 +189,12 @@
 
   .itemListImageWrap {
     left: 52px;
-    max-width: 480px;
-    width: 40%;
+    /*width: 480px;*/
+  }
+
+  .itemListImage {
+    width: 440px;
+    height: 440px;
   }
 }
 
@@ -278,6 +288,10 @@
     padding: 16px;
   }
 
+  .itemListImageWrap:before {
+    display: none;
+  }
+
   .decorArrow {
     top: -20px;
     right: 110px;
@@ -288,5 +302,19 @@
     width: 44px;
     left: 60px;
     bottom: -14px;
+  }
+}
+
+@media (max-width: 575px) {
+  .itemListImage {
+    width: 360px;
+    height: 360px;
+  }
+}
+
+@media (max-width: 480px) {
+  .itemListImage {
+    width: 240px;
+    height: 240px;
   }
 }

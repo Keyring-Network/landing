@@ -29,10 +29,14 @@ const WhatWeDo = () => {
               key={`${el.title}, ${idx}`}
               role="button"
               tabIndex="0"
+              // style={{ backgroundImage: `url(${el.img})`}}
             >
               <div className={classNames(styles.itemListImageWrap)}>
-                <div className={classNames(styles.itemListImage)}>
-                  <img src={el.img} className={styles.mainImg} alt="diagram" loading="lazy" />
+                <div
+                  className={classNames(styles.itemListImage)}
+                   style={{ backgroundImage: `url(${el.img})` }}
+                >
+                  {/*<img src={el.img} className={styles.mainImg} alt="diagram" loading="lazy" />*/}
                   <img src={decor1} className={styles.decorArrow} alt="decor icon" loading="lazy" />
                   <img src={decor2} className={styles.decorLock} alt="decor icon" loading="lazy" />
                 </div>
