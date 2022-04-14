@@ -121,12 +121,12 @@
 
 .imageWrap:before {
   position: absolute;
-  right: -11px;
-  bottom: -12px;
+  right: -9px;
+  bottom: -10px;
   z-index: -1;
   display: flex;
-  width: 60%;
-  height: 60%;
+  width: 57%;
+  height: 67%;
   background: linear-gradient(308.67deg, #2ee297 -15.91%, #1dc9d4 120.74%);
   border: 2px solid #0f2830;
   content: "";
