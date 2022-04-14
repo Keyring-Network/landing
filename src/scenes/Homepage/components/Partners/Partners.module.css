@@ -1,8 +1,17 @@
 .partnersWrap {
-  padding: 0 0 102px;
+  position: absolute;
+  bottom: 60px;
   background: #0f2830;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  padding: 0 104px;
+  max-width: 1440px;
+  margin: auto;
+  left: 0;
+  right: 0;
 }
 
 .container {
@@ -36,6 +45,18 @@
   font-size: 32px;
 }
 
+@media (max-device-height: 700px) {
+  .partnersWrap {
+    bottom: 40px;
+  }
+}
+
+@media (max-height: 700px) {
+  .partnersWrap {
+    bottom: 40px;
+  }
+}
+
 @media (max-width: 1300px) {
   .logosWrap .logo {
     margin-left: 64px;
@@ -43,6 +64,10 @@
 }
 
 @media (max-width: 1200px) {
+  .partnersWrap {
+    padding: 0 52px;
+  }
+
   .logosWrap .logo {
     margin-left: 44px;
     max-width: 100px;
@@ -51,12 +76,22 @@
 
 @media (max-width: 991px) {
   .partnersWrap {
-    padding: 0 0 56px;
+    padding: 0 52px;
+  }
+
+  .logosWrap .logo {
+    margin-left: 24px;
   }
 }
 
 @media (max-width: 768px) {
   .container {
+    flex-direction: column;
+  }
+
+  .partnersWrap {
+    position: relative;
+    margin: 40px auto 0;
     flex-direction: column;
   }
 
@@ -70,6 +105,13 @@
 }
 
 @media (max-width: 575px) {
+  .partnersWrap {
+    position: relative;
+    margin: 40px auto 0;
+    flex-direction: column;
+    bottom: initial;
+  }
+
   .logosWrap {
     flex-wrap: wrap;
   }

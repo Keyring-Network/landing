@@ -5,7 +5,7 @@ import * as styles from './Partners.module.css';
 
 const Partners = () => (
   <div className={styles.partnersWrap}>
-    <div className={classNames('container', styles.container)}>
+    {/*<div className={classNames('container', styles.container)}>*/}
       <h3>
         {content.TITLE}
         {' '}
@@ -18,7 +18,7 @@ const Partners = () => (
           </a>
         ))}
       </div>
-    </div>
+    {/*</div>*/}
   </div>
 );
 
