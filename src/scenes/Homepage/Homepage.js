@@ -1,6 +1,5 @@
 import React from "react"
 import Hero from "./components/Hero"
-import Partners from "./components/Partners"
 import WhatWeDo from "./components/WhatWeDo"
 import LatestNews from "./components/LatestNews"
 import FAQ from "./components/FAQ"
@@ -10,7 +9,6 @@ import SignUp from "./components/SignUp"
 const Homepage = () => (
   <>
     <Hero />
-    {/*<Partners />*/}
     <WhatWeDo />
     <LatestNews />
     <FAQ />
