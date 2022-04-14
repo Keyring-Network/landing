@@ -59,7 +59,7 @@ const Hero = () => (
           />
         </div>
       </div>
-      {/*<Partners />*/}
+      <Partners />
     </div>
   </div>
 );
