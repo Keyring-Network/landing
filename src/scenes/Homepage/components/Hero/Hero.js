@@ -7,9 +7,11 @@ import { Popup } from 'react-typeform-embed';
 
 import * as styles from './Hero.module.css';
 import * as content from '../../../../constants/content/hero';
+import * as partners from '../../../../constants/content/partners';
+
 
 const Hero = () => (
-  <div className={styles.hero}>
+  <div className={classNames(styles.hero, partners?.LOGOS_LIST?.length > 0 && styles.heroWithPartners)}>
     <div className={classNames("container", styles.container)}>
       <div className={styles.heroText}>
         <h1>
@@ -60,7 +62,13 @@ const Hero = () => (
           />
         </div>
       </div>
-      <Partners />
+      {partners?.LOGOS_LIST.length &&
+        <Partners
+          title={partners.TITLE}
+          titleColored={partners.TITLE_COLORED}
+          logosList={partners?.LOGOS_LIST}
+        />
+      }
     </div>
   </div>
 );
