@@ -42,10 +42,12 @@
   top: 100px;
   left: 0;
 }
+
 .imagesGroup img:nth-child(2) {
   top: 0;
   right: 50px;
 }
+
 .imagesGroup img:last-child {
   right: 0;
   bottom: 0;
