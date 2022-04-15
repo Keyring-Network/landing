@@ -33,6 +33,10 @@
   line-height: 150%;
 }
 
+.heroText :global .react-typeform-embed {
+  position: initial;
+}
+
 .heroText .ctaText {
   font-size: 16px;
   opacity: .6;
@@ -42,34 +46,28 @@
   margin: 0 0 24px;
 }
 
-.heroImageWrap {
-  position: relative;
-}
-
-.imagesGroup > img {
+.heroText > div {
   position: absolute;
 }
 
-.imagesGroup img:first-child {
-  top: 100px;
-  left: 0;
+.heroText > div:last-child {
+  left: 180px;
+  bottom: 27%;
 }
 
-.imagesGroup img:nth-child(2) {
-  top: 0;
-  right: 50px;
-}
-
-.imagesGroup img:last-child {
+.heroText > div:nth-last-child(2) {
   right: 0;
-  bottom: 0;
+  bottom: 55%;
 }
 
-.padlock,
-.anonMask,
-.key,
-.shield {
-  position: absolute;
+.heroText > div:nth-last-child(3) {
+  right: 0;
+  bottom: 33%;
+}
+
+.heroText > div:nth-last-child(4) {
+  left: 0;
+  bottom: 40%;
 }
 
 .shield,
@@ -77,24 +75,9 @@
   max-width: 70px;
 }
 
-.padlock {
-  left: 0;
-  bottom: 40%;
-}
-
-.anonMask {
-  left: 180px;
-  bottom: 27%;
-}
-
+.padlock,
 .key {
-  right: 0;
-  bottom: 33%;
-}
-
-.shield {
-  right: 0;
-  bottom: 55%;
+  max-width: initial;
 }
 
 @media (max-height: 800px) {
