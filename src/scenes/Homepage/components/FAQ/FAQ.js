@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import classNames from 'classnames/bind';
+import AddonsMobile from './components/AddonsMobile';
 import * as content from '../../../../constants/content/faq';
 import * as styles from './FAQ.module.css';
 import arrow from '../../../../assets/images/arrow.svg';
@@ -22,7 +23,12 @@ const FAQ = () => {
           </div>
           <div className={styles.faqAddons}>
             <h3 className={styles.faqAddon}>{content.FAQ_ADDON}</h3>
-            <a href={content.READ_DOCS} className={classNames('link_colored', styles.link)} target="_blank" rel="noreferrer">
+            <a
+              href={content.READ_DOCS}
+              className={classNames('link_colored', styles.link)}
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={download} alt="download" />
               {content.DOWNLOAD_DOCS}
             </a>
@@ -54,28 +60,11 @@ const FAQ = () => {
             </div>
           ))}
         </div>
-        <div className={styles.faqAddonsMobile}>
-          <h3 className={styles.faqAddon}>{content.FAQ_ADDON}</h3>
-          <a
-            href={content.READ_DOCS}
-            className={classNames("link_colored", styles.link)}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={download} alt="download" loading="lazy" />
-            {content.DOWNLOAD_DOCS}
-          </a>
-          <br />
-          <a
-            href={content.LINK_DISCORD}
-            className={classNames("link_colored", styles.link)}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={discord} alt="discord" loading="lazy" />
-            {content.ASK_DISCORD}
-          </a>
-        </div>
+        <AddonsMobile
+          defaultStyles={styles}
+          discordIcon={discord}
+          downloadIcon={download}
+        />
       </div>
     </div>
   );
