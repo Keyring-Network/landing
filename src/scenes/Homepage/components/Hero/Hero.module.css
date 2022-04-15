@@ -33,6 +33,10 @@
   line-height: 150%;
 }
 
+.heroText :global .react-typeform-embed {
+  position: initial;
+}
+
 .heroText .ctaText {
   font-size: 16px;
   opacity: .6;
@@ -40,61 +44,6 @@
 
 .heroBtn {
   margin: 0 0 24px;
-}
-
-.heroImageWrap {
-  position: relative;
-}
-
-.imagesGroup > img {
-  position: absolute;
-}
-
-.imagesGroup img:first-child {
-  top: 100px;
-  left: 0;
-}
-
-.imagesGroup img:nth-child(2) {
-  top: 0;
-  right: 50px;
-}
-
-.imagesGroup img:last-child {
-  right: 0;
-  bottom: 0;
-}
-
-.padlock,
-.anonMask,
-.key,
-.shield {
-  position: absolute;
-}
-
-.shield,
-.anonMask {
-  max-width: 70px;
-}
-
-.padlock {
-  left: 0;
-  bottom: 40%;
-}
-
-.anonMask {
-  left: 180px;
-  bottom: 27%;
-}
-
-.key {
-  right: 0;
-  bottom: 33%;
-}
-
-.shield {
-  right: 0;
-  bottom: 55%;
 }
 
 @media (max-height: 800px) {
@@ -113,30 +62,6 @@
   }
 }
 
-@media (max-width: 991px) {
-  .shield,
-  .anonMask {
-    max-width: 40px;
-  }
-
-  .shield {
-    bottom: 49%;
-  }
-
-  .anonMask {
-    left: 80px;
-  }
-
-  .padlock {
-    width: 80px;
-  }
-
-  .key {
-    width: 180px;
-  }
-}
-
-
 @media (max-height: 800px) {
   .hero.heroWithPartners {
     height: auto;
@@ -154,37 +79,11 @@
     min-height: 100vh;
     padding: 5rem 0;
   }
-
-  .padlock {
-    bottom: 20%;
-  }
-
-  .key {
-    bottom: 20%;
-    width: 140px;
-  }
-
-  .anonMask {
-    left: 40px;
-    bottom: -10%;
-  }
-
-  .shield {
-    bottom: 49%;
-  }
 }
 
 @media (max-width: 575px) {
   .heroText .description {
     margin: 0 auto 32px;
-  }
-
-  .anonMask {
-    left: 40px;
-  }
-
-  .key {
-    width: 100px;
   }
 
   .heroText {
@@ -194,14 +93,5 @@
 
   .container {
     height: auto;
-  }
-}
-
-@media (max-width: 575px) {
-  .padlock,
-  .anonMask,
-  .key,
-  .shield {
-    display: none;
   }
 }
