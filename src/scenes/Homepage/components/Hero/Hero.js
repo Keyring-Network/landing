@@ -17,11 +17,7 @@ const Hero = () => {
         <div className={classNames(styles.hero, partners?.LOGOS_LIST?.length > 0 && styles.heroWithPartners)}>
           <div className={classNames("container", styles.container)}>
             <div className={styles.heroText}>
-              <h1>
-                {content.TITLE}
-                <span>{content.TITLE_COLORED}</span>
-                {content.TITLE_LAST}
-              </h1>
+              <h1>{content.TITLE}</h1>
               <p className={styles.description}>{content.DESCRIPTION}</p>
               <Popup id="PF5a05ot" size={80}>
                 <a

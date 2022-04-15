@@ -1,7 +1,6 @@
-import React from "react"
+import React from 'react';
 
-export const TITLE = "Join "
-export const TITLE_COLORED = "The Community"
+export const TITLE = <>Join <span>The Community</span></>
 export const DESCRIPTION = "Engage with the community, ask questions, participate in AMAs and more."
 export const SOCIAL_LIST = [
   {

@@ -15,11 +15,7 @@ const FAQ = () => {
       <div className={classNames('container', styles.container)}>
         <div className={styles.leftContent}>
           <div className={styles.titleWrap}>
-            <h2>
-              {content.TITLE}
-              {' '}
-              <span>{content.TITLE_COLORED}</span>
-            </h2>
+            <h2>{content.TITLE}</h2>
           </div>
           <div className={styles.faqAddons}>
             <h3 className={styles.faqAddon}>{content.FAQ_ADDON}</h3>

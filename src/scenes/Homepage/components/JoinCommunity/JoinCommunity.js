@@ -12,11 +12,7 @@ const JoinCommunity = () => (
       <img src={decor1} className={styles.decorPadlock} alt="diagram" loading="lazy" />
       <img src={decor2} className={styles.decorKey} alt="diagram" loading="lazy" />
       <div className={styles.titleWrap}>
-        <h2>
-          {content.TITLE}
-          {' '}
-          <span>{content.TITLE_COLORED}</span>
-        </h2>
+        <h2>{content.TITLE}</h2>
         <p>{content.DESCRIPTION}</p>
       </div>
       <div className={styles.communitiesList}>

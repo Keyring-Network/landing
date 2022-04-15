@@ -24,11 +24,7 @@ const WhatWeDo = () => {
           </div>
           <div>
             <div className={styles.titleWrap}>
-              <h2>
-                {content.TITLE}
-                {' '}
-                <span>{content.TITLE_COLORED}</span>
-              </h2>
+              <h2>{content.TITLE}</h2>
               <p>{content.DESCRIPTION}</p>
             </div>
             <div className={classNames(styles.imageWrap, styles.imageWrapMobile)}>
