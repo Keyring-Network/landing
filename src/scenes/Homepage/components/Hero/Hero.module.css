@@ -46,44 +46,6 @@
   margin: 0 0 24px;
 }
 
-.heroText > div:last-child,
-.heroText > div:nth-last-child(2),
-.heroText > div:nth-last-child(3),
-.heroText > div:nth-last-child(4) {
-  position: absolute;
-  z-index: 5;
-}
-
-.heroText > div:last-child {
-  left: 180px;
-  bottom: 37%;
-}
-
-.heroText > div:nth-last-child(2) {
-  right: 0;
-  bottom: 55%;
-}
-
-.heroText > div:nth-last-child(3) {
-  right: 0;
-  bottom: 33%;
-}
-
-.heroText > div:nth-last-child(4) {
-  left: 0;
-  bottom: 40%;
-}
-
-.shield,
-.anonMask {
-  max-width: 70px;
-}
-
-.padlock,
-.key {
-  max-width: initial;
-}
-
 @media (max-height: 800px) {
   .hero.heroWithPartners {
     height: auto;
@@ -99,31 +61,6 @@
     padding: 10rem 0 5rem;
   }
 }
-
-@media (max-width: 991px) {
-  .heroText > div:nth-last-child(4) {
-    left: 80px;
-    bottom: 50%;
-  }
-
-  .heroText > div:nth-last-child(3) {
-    bottom: 30%;
-  }
-
-  .shield,
-  .anonMask {
-    max-width: 40px;
-  }
-
-  .padlock {
-    width: 80px;
-  }
-
-  .key {
-    width: 180px;
-  }
-}
-
 
 @media (max-height: 800px) {
   .hero.heroWithPartners {
@@ -142,37 +79,11 @@
     min-height: 100vh;
     padding: 5rem 0;
   }
-
-  .heroText > div:last-child {
-    left: 50px;
-    bottom: 60%;
-  }
-
-  .heroText > div:nth-last-child(2) {
-    bottom: 60%;
-    right: 20px;
-  }
-
-  .heroText > div:nth-last-child(3) {
-    bottom: -5%;
-  }
-
-  .heroText > div:nth-last-child(4) {
-    left: 0;
-    bottom: 0;
-  }
 }
 
 @media (max-width: 575px) {
   .heroText .description {
     margin: 0 auto 32px;
-  }
-
-  .heroText > div:last-child,
-  .heroText > div:nth-last-child(2),
-  .heroText > div:nth-last-child(3),
-  .heroText > div:nth-last-child(4) {
-    display: none;
   }
 
   .heroText {

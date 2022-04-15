@@ -2,8 +2,7 @@ import React from "react"
 import img1 from "../../assets/images/what_we_do_1.jpg"
 import img2 from "../../assets/images/post_image.jpg"
 
-export const TITLE = "What We "
-export const TITLE_COLORED = "Do"
+export const TITLE = <>What We <span>Do</span></>
 export const DESCRIPTION = "Keyring.Network solves the problem of AML/KYC for DeFi while retaining privacy. " +
   "We are the only viable industry solution that permits point-in-time KYC/AML checks via smart contracts."
 export const LIST = [

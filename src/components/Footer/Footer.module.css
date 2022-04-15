@@ -65,6 +65,7 @@
   background: #ffffff;
   box-shadow: none;
   border: none;
+  opacity: .6;
 }
 
 .socials,
@@ -112,6 +113,12 @@
     align-items: flex-start;
   }
 
+  .footerContainer:nth-child(2) {
+    align-items: flex-start;
+    font-size: 8px;
+    line-height: 9px;
+  }
+
   .menu,
   .mobileMenu li:last-child {
     display: none;
@@ -148,11 +155,6 @@
   .footer p {
     font-size: 12px;
     line-height: 150%;
-  }
-
-  .footerContainer:last-child {
-    font-size: 8px;
-    line-height: 9px;
   }
 }
 

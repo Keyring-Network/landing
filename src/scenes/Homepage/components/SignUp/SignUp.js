@@ -13,12 +13,7 @@ const SignUp = () => (
         <img src={decor1} className={styles.decorKeyUp} alt="diagram" loading="lazy" />
         <img src={decor2} className={styles.decorFingerPrint} alt="diagram" loading="lazy" />
         <div className={styles.titleWrap}>
-          <h2>
-            {content.TITLE}
-            {' '}
-            <br />
-            <span>{content.TITLE_COLORED}</span>
-          </h2>
+          <h2>{content.TITLE}</h2>
           <p>{content.DESCRIPTION}</p>
         </div>
         <a href={content.BTN_URL} className={styles.btn} target="_blank" rel="noreferrer">

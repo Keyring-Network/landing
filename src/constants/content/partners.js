@@ -8,9 +8,9 @@ export const TITLE = "Trusted"
 export const TITLE_COLORED = "by"
 
 export const LOGOS_LIST = [
-  {logo: logo1, url: "/"},
-  {logo: logo2, url: "/"},
-  {logo: logo3, url: "/"},
-  {logo: logo4, url: "/"},
-  {logo: logo5, url: "/"},
+  {logo: logo1, url: "/", name: "company name"},
+  {logo: logo2, url: "/", name: "company name"},
+  {logo: logo3, url: "/", name: "company name"},
+  {logo: logo4, url: "/", name: "company name"},
+  {logo: logo5, url: "/", name: "company name"},
 ]

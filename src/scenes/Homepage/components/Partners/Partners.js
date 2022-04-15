@@ -10,9 +10,9 @@ const Partners = ({title, titleColored, logosList}) => (
       <span>{titleColored}</span>
     </h3>
     <div className={styles.logosWrap}>
-      {logosList?.map(({logo, url}) => (
+      {logosList?.map(({logo, url, name}) => (
         <a href={url ? url : "/"} className={styles.logo} key={logo}>
-          <img src={logo} alt="partner" loading="eager"/>
+          <img src={logo} alt={name} loading="eager"/>
         </a>
       ))}
     </div>

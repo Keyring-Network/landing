@@ -1,5 +1,6 @@
-export const TITLE = "Frequently Asked "
-export const TITLE_COLORED = "Questions"
+import React from 'react';
+
+export const TITLE = <>Frequently Asked <span>Questions</span></>
 export const FAQS = [
   {
     question: "Are we the only viable industry solution that permits point-in-time KYC/AML checks via smart contracts?",
