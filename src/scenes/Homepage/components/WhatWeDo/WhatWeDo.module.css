@@ -208,10 +208,22 @@
   }
 
   .itemListWrap {
+    padding: 0 16px;
+  }
+
+  .itemListWrap.active {
+    padding: 16px;
+  }
+
+  .itemListWrap.active .itemListWrap {
+    margin: 0 0 40px;
+  }
+
+  .itemListWrap {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin: 0 0 40px;
+    margin: 0 0 16px;
     padding: 0 0 16px;
     background: #ffffff;
   }
@@ -275,6 +287,24 @@
     width: 44px;
     left: 60px;
     bottom: -14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .partnersWrap {
+    scroll-margin-top: 80px;
+  }
+
+  .decorLock {
+    left: 30px;
+  }
+
+  .decorArrow {
+    right: 60px;
+  }
+
+  .titleWrap p {
+    font-size: 16px;
   }
 }
 

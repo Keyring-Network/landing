@@ -14,7 +14,6 @@ const AddonsMobile = ({defaultStyles, downloadIcon, discordIcon}) => (
       <img src={downloadIcon} alt="download" loading="lazy" />
       {content.DOWNLOAD_DOCS}
     </a>
-    <br />
     <a
       href={content.LINK_DISCORD}
       className={classNames("link_colored", defaultStyles.link)}

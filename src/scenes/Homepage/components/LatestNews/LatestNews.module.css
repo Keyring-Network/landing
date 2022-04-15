@@ -188,6 +188,14 @@
 }
 
 @media (max-width: 768px) {
+  .newsWrap {
+    scroll-margin-top: 80px;
+  }
+
+  .titleWrap p {
+    font-size: 16px;
+  }
+
   .postsWrap {
     flex-direction: column;
   }
@@ -206,8 +214,26 @@
     padding: 24px;
   }
 
+  .text {
+    font-size: 14px;
+  }
+
+  .date {
+    font-size: 12px;
+  }
+
   .decorEllipse {
-    right: 32px;
-    top: -150px;
+    right: 52px;
+    top: -104px;
+    width: 90px;
+  }
+
+  .decorQuestion {
+    bottom: -110px;
+    width: 60px;
+  }
+
+  .newsBtn {
+    margin: 44px auto 0;
   }
 }

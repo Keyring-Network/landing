@@ -135,6 +135,7 @@
 @media (max-width: 768px) {
   .signUpWrap {
     margin: 56px 0;
+    scroll-margin-top: 80px;
   }
 
   .signUpContent {
