@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import classNames from 'classnames/bind';
-import logo from '../../assets/images/logo.svg';
+import Logo from '../Logo';
 import * as menu from '../../constants/navMenu';
 import * as content from '../../constants/footer';
 import * as styles from './Footer.module.css';
@@ -9,9 +9,7 @@ import * as styles from './Footer.module.css';
 const Footer = () => (
   <footer className={styles.footer}>
     <div className={classNames('container', styles.footerContainer)}>
-      <Link to="/">
-        <img src={logo} alt="keyring logo" loading="lazy" />
-      </Link>
+      <Logo color='#ffffff' />
       <ul className={styles.menu}>
         {menu.navMenu.map((el) => (
           <li key={el.url}>

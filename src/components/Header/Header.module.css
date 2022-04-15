@@ -20,25 +20,15 @@
   transition: all 1s;
 }
 
-.headerOpen svg {
-  position: relative;
-  z-index: 5;
-}
-
-.headerOpen svg path:nth-child(3),
-.headerOpen svg path:nth-child(4),
-.headerOpen svg path:nth-child(5),
-.headerOpen svg path:nth-child(6),
-.headerOpen svg path:nth-child(7),
-.headerOpen svg path:nth-child(8),
-.headerOpen svg path:nth-child(9) {
-  fill: #0f2830 !important;
-}
-
 .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header svg {
+  position: relative;
+  z-index: 10;
 }
 
 .menu {
