@@ -20,8 +20,8 @@ const JoinCommunity = () => (
           <div className={styles.community} key={el.title}>
             <div className={styles.communityContent}>
               <div className={styles.icon}>{el.icon}</div>
-              <div className={styles.title}>{el.title}</div>
-              <div className={styles.text}>{el.text}</div>
+              <h3 className={styles.title}>{el.title}</h3>
+              <p className={styles.text}>{el.text}</p>
               <a
                 href={el.btn_url}
                 className={classNames('link_colored', styles.link)}
