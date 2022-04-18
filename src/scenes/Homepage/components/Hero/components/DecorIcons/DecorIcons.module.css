@@ -36,6 +36,16 @@
   max-width: initial;
 }
 
+.key {
+  width: calc(260 / 1440 * 100vw);
+  max-width: 260px;
+}
+
+.padlock {
+  width: calc(124 / 1440 * 100vw);
+  max-width: 124px;
+}
+
 @media (max-width: 991px) {
   .decorWrap > div:nth-last-child(4) {
     left: 80px;
@@ -51,13 +61,6 @@
     max-width: 40px;
   }
 
-  .padlock {
-    width: 80px;
-  }
-
-  .key {
-    width: 180px;
-  }
 }
 
 
