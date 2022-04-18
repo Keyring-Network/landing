@@ -19,6 +19,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 .heroText h1 {
@@ -79,6 +80,22 @@
     min-height: 100vh;
     padding: 5rem 0;
   }
+
+  .heroText .description {
+    font-size: 16px;
+  }
+  .heroText h1 {
+    margin-bottom: 16px;
+    padding-right: 14px;
+  }
+
+  .heroBtn {
+    margin-bottom: 16px;
+  }
+
+  .heroText .ctaText {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -87,8 +104,10 @@
   }
 
   .heroText {
-    margin: 40px auto 0;
+    margin: 0px auto 0;
     height: auto;
+    align-items: flex-start;
+    text-align: left;
   }
 
   .container {

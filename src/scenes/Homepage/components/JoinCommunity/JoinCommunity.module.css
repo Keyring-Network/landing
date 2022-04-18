@@ -133,10 +133,6 @@
     padding: 24px;
   }
 
-  .link {
-    font-size: 14px;
-  }
-
   .decorPadlock {
     top: -160px;
   }
@@ -166,8 +162,10 @@
 }
 
 @media (max-width: 768px) {
+
   .titleWrap {
     align-items: flex-start;
+    margin-bottom: 40px;
   }
 
   .titleWrap h2 {
@@ -180,6 +178,7 @@
 
   .communityWrap {
     padding: 56px 0;
+    scroll-margin-top: 80px;
   }
 
   .communitiesList {
@@ -194,18 +193,32 @@
 
   .communityContent {
     padding: 28px 24px;
+    border-width: 1px;
+
+    
+  }
+
+  .communityContent .link {
+    font-size: 14px;
   }
 
   .icon {
-    margin: 0 0 24px;
+    margin: 0 0 16px;
+  }
+
+  .icon svg {
+    width: 32px;
+    height: auto;
   }
 
   .title {
     font-size: 18px;
+    margin-bottom: 8px;
   }
 
   .text {
     font-size: 14px;
+    margin-bottom: 24px;
   }
 
   .decorPadlock {

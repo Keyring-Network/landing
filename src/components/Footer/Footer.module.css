@@ -1,6 +1,6 @@
 .footer {
   position: relative;
-  padding: 64px 0;
+  padding: 64px 0 0;
   background: #0f2830;
 }
 
@@ -49,23 +49,32 @@
 
 .footer .footerContainer {
   position: relative;
-  margin-bottom: 26px;
 }
 
 .footerContainer:nth-child(2) {
-  padding-bottom: 56px;
   align-items: flex-end;
+  margin-bottom: 48px;
 }
 
 .footerContainer hr {
   position: absolute;
-  top: -44px;
+  top: 0px;
   width: calc(100% - 208px);
   height: 2px;
   background: #ffffff;
   box-shadow: none;
   border: none;
   opacity: .6;
+  margin: 0;
+}
+
+.footer .footerBottom {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.footer .footerTop {
+  margin-bottom: 32px;
 }
 
 .socials,
@@ -159,7 +168,27 @@
 }
 
 @media (max-width: 768px) {
+
   .footerContainer hr {
     width: calc(100% - 48px);
+  }
+
+  .footerContainer:nth-child(2) {
+    margin-bottom: 24px;
+  }
+
+  .footer .footerBottom {
+    padding-top: 18px;
+    padding-bottom: 24px;
+  }
+
+  .footer .footerTop {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .termsMenu a, .footer p {
+    font-size: 8px;
   }
 }

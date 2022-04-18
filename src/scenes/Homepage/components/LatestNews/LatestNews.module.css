@@ -5,17 +5,18 @@
 }
 .newsContainer {
   position: relative;
+  z-index: 1;
 }
 
 .decorEllipse,
 .decorQuestion {
   position: absolute;
-  z-index: 5;
+  z-index: -1;
 }
 
 .decorEllipse {
   top: -128px;
-  right: 90px;
+  right: calc(90 / 1440 * 100%);
 }
 
 .decorQuestion {
@@ -192,6 +193,14 @@
     scroll-margin-top: 80px;
   }
 
+  .titleWrap {
+    margin-bottom: 40px;
+  }
+
+  .titleWrap h2 {
+   margin-bottom: 16px;
+  }
+
   .titleWrap p {
     font-size: 16px;
   }
@@ -208,13 +217,24 @@
   .post:before {
     right: -4px;
     bottom: -4px;
+    border-width: 1px;
   }
 
   .info {
     padding: 24px;
+    border-width: 1px;
+  }
+
+  .imageWrap {
+    border-width: 1px;
   }
 
   .text {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  .author {
     font-size: 14px;
   }
 
@@ -234,6 +254,6 @@
   }
 
   .newsBtn {
-    margin: 44px auto 0;
+    margin: 20px auto 0;
   }
 }
