@@ -133,10 +133,6 @@
     padding: 24px;
   }
 
-  .link {
-    font-size: 14px;
-  }
-
   .decorPadlock {
     top: -160px;
   }
@@ -198,6 +194,12 @@
   .communityContent {
     padding: 28px 24px;
     border-width: 1px;
+
+    
+  }
+
+  .communityContent .link {
+    font-size: 14px;
   }
 
   .icon {
