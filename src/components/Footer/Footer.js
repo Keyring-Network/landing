@@ -8,7 +8,13 @@ import * as styles from "./Footer.module.css";
 
 const Footer = () => (
   <footer className={styles.footer}>
-    <div className={classNames("container", styles.footerContainer)}>
+    <div
+      className={classNames(
+        "container",
+        styles.footerContainer,
+        styles.footerTop
+      )}
+    >
       <Logo color="#ffffff" />
       <ul className={styles.menu}>
         {menu.navMenu.map((el) => (

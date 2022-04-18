@@ -73,6 +73,10 @@
   padding-bottom: 32px;
 }
 
+.footer .footerTop {
+  margin-bottom: 32px;
+}
+
 .socials,
 .termsMenu {
   display: flex;
@@ -176,6 +180,10 @@
   .footer .footerBottom {
     padding-top: 18px;
     padding-bottom: 24px;
+  }
+
+  .footer .footerTop {
+    margin-bottom: 16px;
   }
 }
 
