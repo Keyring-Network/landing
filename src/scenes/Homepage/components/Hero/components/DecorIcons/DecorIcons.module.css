@@ -3,7 +3,7 @@
 .decorWrap > div:nth-last-child(3),
 .decorWrap > div:nth-last-child(4) {
   position: absolute;
-  z-index: 5;
+  z-index: -1;
 }
 
 .decorWrap > div:last-child {

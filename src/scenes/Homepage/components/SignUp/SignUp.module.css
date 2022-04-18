@@ -45,7 +45,7 @@
   position: relative;
   display: flex;
   width: 265px;
-  height: 64px;
+  /* height: 64px; */
   background: linear-gradient(223.23deg, #2EE297 0.2%, #1DC9D4 78.23%);
   border: 2px solid #0F2830;
   align-content: center;
@@ -133,13 +133,22 @@
 }
 
 @media (max-width: 768px) {
+  .titleWrap h2 {
+    margin-bottom: 16px;
+  }
+
+  .titleWrap p {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+
   .signUpWrap {
     margin: 56px 0;
     scroll-margin-top: 80px;
   }
 
   .signUpContent {
-    padding: 260px 24px 24px;
+    padding: 220px 24px 24px;
   }
 
   .labirinth {
@@ -152,6 +161,13 @@
 
   .btn {
     width: 100%;
+
+
+  }
+
+  .btn span {
+    font-size: 16px;
+    padding: 11px 20px;
   }
 
   .decorKeyUp,

@@ -1,9 +1,9 @@
-import React, {useState} from "react"
-import { Link } from "gatsby"
-import classNames from "classnames/bind"
-import * as styles from "./MobileMenu.module.css"
+import React, { useState } from "react";
+import { Link } from "gatsby";
+import classNames from "classnames/bind";
+import * as styles from "./MobileMenu.module.css";
 
-const MobileMenu = ({menuList, open, onCLickMenu}) => (
+const MobileMenu = ({ menuList, open, onCLickMenu }) => (
   <>
     <div
       className={classNames(styles.hamburger, open && styles.hamburgerOpen)}
@@ -13,16 +13,18 @@ const MobileMenu = ({menuList, open, onCLickMenu}) => (
       <span />
       <span />
     </div>
-    {open &&
+    {open && (
       <ul className={styles.mobileMenu}>
         {menuList.map((el, idx) => (
           <li key={idx}>
-            <Link to={el.url}>{el.text}</Link>
+            <Link to={el.url} onClick={onCLickMenu}>
+              {el.text}
+            </Link>
           </li>
         ))}
       </ul>
-    }
+    )}
   </>
-)
+);
 
-export default MobileMenu
+export default MobileMenu;

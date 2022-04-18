@@ -202,7 +202,7 @@
 
 
   .imageWrapMobile {
-    margin: 0 auto 60px;
+    margin: 0 auto 45px;
     width: 440px;
     height: 440px;
   }
@@ -291,6 +291,14 @@
 }
 
 @media (max-width: 768px) {
+  .titleWrap {
+    margin-bottom: 36px;
+  }
+
+  .titleWrap h2 {
+    margin-bottom: 16px;
+  }
+
   .partnersWrap {
     scroll-margin-top: 80px;
   }
@@ -337,7 +345,7 @@
 
 @media (max-width: 480px) {
   .imageWrapMobile {
-    width: 260px;
-    height: 260px;
+    width: 268px;
+    height: 268px;
   }
 }
