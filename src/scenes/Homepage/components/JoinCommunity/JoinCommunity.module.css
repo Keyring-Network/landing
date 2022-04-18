@@ -197,6 +197,7 @@
 
   .communityContent {
     padding: 28px 24px;
+    border-width: 1px;
   }
 
   .icon {

@@ -277,6 +277,11 @@ body, p {
     padding: 11px 20px;
     font-size: 16px;
   }
+
+  .b-green span {
+    padding: 11px 32px;
+    font-size: 16px;
+  }
 }
 
 

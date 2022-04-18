@@ -173,5 +173,14 @@
 
   .itemListWrap {
     margin-bottom: 16px;
+    border-width: 1px;
+  }
+
+  .itemListWrap:before {
+    border-width: 1px;
+  }
+
+  .link {
+    font-size: 14px;
   }
 }

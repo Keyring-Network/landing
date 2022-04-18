@@ -264,7 +264,7 @@
     content: "";
   }
 
-  .title {
+  .title, .text {
     font-size: 14px;
   }
 
@@ -314,6 +314,14 @@
   .titleWrap p {
     font-size: 16px;
   }
+
+  .itemListWrap.active, .itemListWrap.active:before {
+    border-width: 1px;
+  }
+
+  .image, .imageWrap:before {
+    border-width: 1px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -324,7 +332,7 @@
 
   .itemListWrap {
     padding: 16px;
-    width: calc(100% - 20px);
+    width: 100%;
   }
 
   .itemList {

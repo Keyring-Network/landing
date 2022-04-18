@@ -147,8 +147,13 @@
     scroll-margin-top: 80px;
   }
 
+  .signUpWrap:before {
+    border-width: 1px;
+  }
+
   .signUpContent {
     padding: 220px 24px 24px;
+    border-width: 1px;
   }
 
   .labirinth {

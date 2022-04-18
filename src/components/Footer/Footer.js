@@ -1,15 +1,15 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import classNames from 'classnames/bind';
-import Logo from '../Logo';
-import * as menu from '../../constants/navMenu';
-import * as content from '../../constants/footer';
-import * as styles from './Footer.module.css';
+import React from "react";
+import { Link } from "gatsby";
+import classNames from "classnames/bind";
+import Logo from "../Logo";
+import * as menu from "../../constants/navMenu";
+import * as content from "../../constants/footer";
+import * as styles from "./Footer.module.css";
 
 const Footer = () => (
   <footer className={styles.footer}>
-    <div className={classNames('container', styles.footerContainer)}>
-      <Logo color='#ffffff' />
+    <div className={classNames("container", styles.footerContainer)}>
+      <Logo color="#ffffff" />
       <ul className={styles.menu}>
         {menu.navMenu.map((el) => (
           <li key={el.url}>
@@ -18,7 +18,7 @@ const Footer = () => (
         ))}
       </ul>
     </div>
-    <div className={classNames('container', styles.footerContainer)}>
+    <div className={classNames("container", styles.footerContainer)}>
       <p className={styles.footerInfo}>{content.INFO_TEXT}</p>
       <ul className={styles.mobileMenu}>
         {menu.navMenu.map((el) => (
@@ -37,7 +37,13 @@ const Footer = () => (
         ))}
       </ul>
     </div>
-    <div className={classNames('container', styles.footerContainer)}>
+    <div
+      className={classNames(
+        "container",
+        styles.footerContainer,
+        styles.footerBottom
+      )}
+    >
       <hr />
       <p className={styles.rights}>{content.RIGHTS_RESERVED_TEXT}</p>
       <ul className={styles.termsMenu}>

@@ -217,10 +217,16 @@
   .post:before {
     right: -4px;
     bottom: -4px;
+    border-width: 1px;
   }
 
   .info {
     padding: 24px;
+    border-width: 1px;
+  }
+
+  .imageWrap {
+    border-width: 1px;
   }
 
   .text {
