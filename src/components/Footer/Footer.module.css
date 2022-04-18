@@ -68,7 +68,7 @@
   margin: 0;
 }
 
-.footerBottom {
+.footer .footerBottom {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -173,7 +173,7 @@
     margin-bottom: 24px;
   }
 
-  .footerBottom {
+  .footer .footerBottom {
     padding-top: 18px;
     padding-bottom: 24px;
   }
