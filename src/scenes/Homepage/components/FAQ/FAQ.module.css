@@ -16,7 +16,7 @@
 
 .itemListWrap {
   position: relative;
-  margin: 0 0 32px;
+  margin: 0 0 10px;
   border: 2px solid transparent;
   cursor: pointer;
 }
@@ -153,6 +153,7 @@
   .arrow {
     top: 24px;
     width: 14px;
+    right: 19px;
   }
 }
 

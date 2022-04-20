@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
-import classNames from 'classnames/bind';
-import AddonsMobile from './components/AddonsMobile';
-import * as content from '../../../../constants/content/faq';
-import * as styles from './FAQ.module.css';
-import arrow from '../../../../assets/images/arrow.svg';
-import discord from '../../../../assets/images/discord.svg';
-import download from '../../../../assets/images/download.svg';
+import React, { useState } from "react";
+import classNames from "classnames/bind";
+import AddonsMobile from "./components/AddonsMobile";
+import * as content from "../../../../constants/content/faq";
+import * as styles from "./FAQ.module.css";
+import arrow from "../../../../assets/images/arrow.svg";
+import discord from "../../../../assets/images/discord.svg";
+import download from "../../../../assets/images/download.svg";
 
 const FAQ = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
     <div id="faq" className={styles.faqWrap}>
-      <div className={classNames('container', styles.container)}>
+      <div className={classNames("container", styles.container)}>
         <div className={styles.leftContent}>
           <div className={styles.titleWrap}>
             <h2>{content.TITLE}</h2>
@@ -21,7 +21,7 @@ const FAQ = () => {
             <h3 className={styles.faqAddon}>{content.FAQ_ADDON}</h3>
             <a
               href={content.READ_DOCS}
-              className={classNames('link_colored', styles.link)}
+              className={classNames("link_colored", styles.link)}
               target="_blank"
               rel="noreferrer"
             >
@@ -29,20 +29,32 @@ const FAQ = () => {
               {content.DOWNLOAD_DOCS}
             </a>
             <br />
-            <a href={content.LINK_DISCORD} className={classNames('link_colored', styles.link)} target="_blank" rel="noreferrer">
+            <a
+              href={content.LINK_DISCORD}
+              className={classNames("link_colored", styles.link)}
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={discord} alt="discord" loading="lazy" />
               {content.ASK_DISCORD}
             </a>
           </div>
         </div>
-        <div className={styles.tabsWrap}>
+        <div>
           {content.FAQS.map((el, idx) => (
             <div
-              className={classNames(styles.itemListWrap, activeTab === idx ? styles.active : '')}
-              onClick={() => { setActiveTab(idx); }}
+              className={classNames(
+                styles.itemListWrap,
+                activeTab === idx ? styles.active : ""
+              )}
+              onClick={() => {
+                setActiveTab(idx);
+              }}
               // eslint-disable-next-line react/no-array-index-key
               key={`${el.question}, ${idx}`}
-              onKeyDown={() => { setActiveTab(idx); }}
+              onKeyDown={() => {
+                setActiveTab(idx);
+              }}
               role="button"
               tabIndex="0"
             >

@@ -11,10 +11,7 @@ const WhatWeDo = () => (
     <div className={classNames("container", styles.container)}>
       <div className={styles.contentWrap}>
         <div className={classNames(styles.imageWrap)}>
-          <div
-            className={classNames(styles.image)}
-            // style={{ backgroundImage: `url(${mainImg})` }}
-          >
+          <div className={classNames(styles.image)}>
             <img src={mainImg} alt="" className={styles.mainImage} />
             <img
               src={decor1}
@@ -36,10 +33,7 @@ const WhatWeDo = () => (
             <p>{content.DESCRIPTION}</p>
           </div>
           <div className={classNames(styles.imageWrap, styles.imageWrapMobile)}>
-            <div
-              className={classNames(styles.image)}
-              // style={{ backgroundImage: `url(${mainImg})` }}
-            >
+            <div className={classNames(styles.image)}>
               <img src={mainImg} alt="" className={styles.mainImage} />
               <img
                 src={decor1}
@@ -55,7 +49,7 @@ const WhatWeDo = () => (
               />
             </div>
           </div>
-          <div className={styles.listWrap}>
+          <div>
             {content.LIST.map((el, idx) => (
               <div
                 className={classNames(styles.itemListWrap)}

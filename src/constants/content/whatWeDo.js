@@ -95,9 +95,9 @@ export const LIST = [
         <path
           d="M7.19922 14L23.9992 24M7.19922 14L7.19922 34L23.9992 44M7.19922 14L23.9992 4L40.7992 14M23.9992 24V44M23.9992 24L40.7992 14M23.9992 44L40.7992 34V14"
           stroke="url(#paint0_linear_922_759)"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <defs>
           <linearGradient
