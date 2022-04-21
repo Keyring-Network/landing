@@ -64,7 +64,7 @@
   line-height: 150%;
 }
 
-.answear {
+.answer {
   display: none;
   visibility: hidden;
   opacity: 0;
@@ -76,7 +76,7 @@
   border-color: black;
 }
 
-.itemListWrap.active .answear {
+.itemListWrap.active .answer {
   display: flex;
   visibility: visible;
   opacity: 1;
@@ -167,7 +167,7 @@
     font-size: 14px;
   }
 
-  .answear {
+  .answer {
     font-size: 14px;
     letter-spacing: 0.02em;
   }

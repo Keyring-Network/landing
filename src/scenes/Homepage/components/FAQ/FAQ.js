@@ -62,7 +62,7 @@ const FAQ = () => {
                 <img src={arrow} className={styles.arrow} alt={arrow} />
                 <div>
                   <p className={styles.question}>{el.question}</p>
-                  <p className={styles.answear}>{el.answear}</p>
+                  <p className={styles.answer}>{el.answer}</p>
                 </div>
               </div>
             </div>

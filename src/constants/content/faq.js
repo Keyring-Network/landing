@@ -4,21 +4,19 @@ export const TITLE = <>Frequently Asked <span>Questions</span></>
 export const FAQS = [
   {
     question: "How does Keyring work?",
-    answear: "As a user, simply scan your credentials in the first time you use Keyring. Our system scans you against global sanctions lists and confirms you are safe to trade - no data saved, and nothing but your wallet’s whitelist status stored on-chain. Once confirmed, your Keyring verification is created (using a unique NFT), confirming your access to trade for 24 hours."
-    <br>"Ready to trade again after this time? Easy, Keyring will prompt you to refresh your verification and within seconds you’re good to go again."
-    <br>"For institutions, reach out to learn more about our API options."
+    answer: "As a user, simply scan your credentials in the first time you use Keyring. Our system scans you against global sanctions lists and confirms you are safe to trade - no data saved, and nothing but your wallet's whitelist status stored on-chain. Once confirmed, your Keyring verification is created (using a unique NFT), confirming your access to trade for 24 hours. Ready to trade again after this time? Easy, Keyring will prompt you to refresh your verification and within seconds you're good to go again. For institutions, reach out to learn more about our API options."
   },
   {
     question: "What sets Keyring apart from other DeFi ID solutions?",
-    answear: "Our solution is designed around two key focusing points - simplicity and the future. The immutable nature of blockchains requires great thought to be placed into any service relating to personal identity on-chain. We have designed Keyring with the age of quantum computing at the forefront of our minds - 50 years from now your interactions through Keyring will be just as secure as they are today."
+    answer: "Our solution is designed around two key focusing points - simplicity and the future. The immutable nature of blockchains requires great thought to be placed into any service relating to personal identity on-chain. We have designed Keyring with the age of quantum computing at the forefront of our minds - 50 years from now your interactions through Keyring will be just as secure as they are today."
   },
   {
     question: "How can we introduce Keyring on our protocol?",
-    answear: "As a protocol, using Keyring couldn’t be easier to install - simply add one line of code. Get in touch and we’ll explain how."
+    answer: "As a protocol, using Keyring couldn't be easier to install - simply add one line of code. Get in touch and we'll explain how."
   },
   {
-    question: "How can I learn more about Keyring’s solution in-depth?",
-    answear: "Talk to us, or read the Keyring whitepaper."
+    question: "How can I learn more about Keyring's solution in-depth?",
+    answer: "Talk to us, or read the Keyring whitepaper."
   }
 ]
 
