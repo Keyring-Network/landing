@@ -6,8 +6,8 @@ export const TITLE = (
   </>
 );
 export const DESCRIPTION =
-  "Keyring.Network solves the problem of AML/KYC for DeFi while retaining privacy. " +
-  "We are the only viable industry solution that permits point-in-time KYC/AML checks via smart contracts.";
+  "Keyring solves the problem of whitelisting for DeFi whilst retaining privacy. " +
+  "We are a DeFi-centric, institution-backed service, permitting point-in-time KYC/AML checks via smart contracts.";
 export const LIST = [
   {
     icon: (
@@ -43,8 +43,8 @@ export const LIST = [
       </svg>
     ),
     title:
-      "Keyring.Network solves the problem of AML/KYC for DeFi while retaining privacy",
-    text: "We are the only viable industry solution that permits point-in-time KYC/AML checks via smart contracts",
+      "Prove your eligibility whilst remaining private",
+    text: "Generate your compliance credentials without sharing your underlying data on-chain. Keyring introduces a seamless ability to maintain user privacy whilst providing regulatory-compliance, essential to onboarding millions of new DeFi users, including legacy finance and institutions.",
   },
   {
     icon: (
@@ -80,8 +80,8 @@ export const LIST = [
       </svg>
     ),
     title:
-      "We are the only viable industry solution that permits point-in-time KYC/AML checks via smart contracts",
-    text: "We are the only viable industry solution that permits point-in-time KYC/AML checks via smart contracts",
+      "Create institution-grade exclusive liquidity pools",
+    text: "Keyring enables the creation of access-controlled permission pools. Execute trades safe in the knowledge that all parties have been verified and whitelisted against up-to-date sanction databases.",
   },
   {
     icon: (
@@ -115,7 +115,7 @@ export const LIST = [
       </svg>
     ),
     title:
-      "Keyring.Network solves the problem of AML/KYC for DeFi while retaining privacy",
-    text: "We are the only viable industry solution that permits point-in-time KYC/AML checks via smart contracts",
+      "AML/KYC for DeFi, from DeFi",
+    text: "Our team are bridging the links between regulators, traditional finance and DeFi protocols to unlock the $5tn of institutional money looking to deploy into digital assets. Most importantly, we look to do this by retaining the vibrant ecosystem within DeFi.",
   },
 ];
