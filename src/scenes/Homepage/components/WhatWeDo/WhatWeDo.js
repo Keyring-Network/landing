@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames/bind";
-import mainImg from "../../../../assets/images/what_we_do_1.jpg";
+import mainImg from "../../../../assets/images/what_we_do_2.jpg";
 import decor1 from "../../../../assets/images/decor/arrow.svg";
 import decor2 from "../../../../assets/images/decor/padlock.svg";
 import * as content from "../../../../constants/content/whatWeDo";
