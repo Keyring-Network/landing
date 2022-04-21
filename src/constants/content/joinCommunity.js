@@ -15,7 +15,7 @@ export const SOCIAL_LIST = [
       </defs>
     </svg>,
     title: "Twitter",
-    text: "Photo, news and many more about our company.",
+    text: "",
     btn_text: "Follow us",
     btn_url: "https://twitter.com/KeyringNetwork",
   },
