@@ -2,7 +2,7 @@
   position: absolute;
   bottom: 60px;
   background: #0f2830;
-  display: flex;
+  display: /*flex;*/ none; /*partners-off*/
   justify-content: space-between;
   align-items: center;
   width: 100%;
