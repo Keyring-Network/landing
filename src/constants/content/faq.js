@@ -14,7 +14,7 @@ export const FAQS = [
   },
   {
     question: "How can we introduce Keyring on our protocol?",
-    answear: "As a protocol, using Keyring couldn’t be easier. Get in touch and we’ll explain how."
+    answear: "As a protocol, using Keyring couldn’t be easier to install - simply add one line of code. Get in touch and we’ll explain how."
   },
   {
     question: "How can I learn more about Keyring’s solution in-depth?",
