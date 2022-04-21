@@ -31,7 +31,7 @@ export const SOCIAL_LIST = [
       </defs>
     </svg>,
     title: "Discord",
-    text: "Chat, discussions and many more about our company.",
+    text: "",
     btn_text: "Request to join the server",
     btn_url: "https://discord.gg/CazSYvuMHW",
   },
@@ -42,7 +42,7 @@ export const SOCIAL_LIST = [
       <path d={"M46.7246 24.9999C46.7246 31.192 45.8292 36.2147 44.7244 36.2147C43.6196 36.2147 42.7246 31.1933 42.7246 24.9999C42.7246 18.8066 43.62 13.7852 44.7244 13.7852C45.8289 13.7852 46.7246 18.8061 46.7246 24.9999Z"} stroke={"#0F2830"} strokeWidth={"2"}/>
     </svg>,
     title: "Medium",
-    text: "News, articles and many more about our company.",
+    text: "",
     btn_text: "Read more",
     btn_url: "https://medium.com/@keyring",
   },
