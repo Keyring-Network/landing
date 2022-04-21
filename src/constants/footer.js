@@ -7,15 +7,15 @@ export const RIGHTS_RESERVED_TEXT = "2022 @ Keyring Network - BUSL 1.1"
 export const SOCIAL = [
   {
     icon: medium,
-    url: "/"
+    url: "https://medium.com/@keyring"
   },
   {
     icon: discord,
-    url: "/"
+    url: "https://discord.gg/CazSYvuMHW"
   },
   {
     icon: twitter,
-    url: "/"
+    url: "https://twitter.com/KeyringNetwork"
   }
 ]
 export const TERMS_MENU = [
