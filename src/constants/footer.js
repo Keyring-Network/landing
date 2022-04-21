@@ -3,7 +3,7 @@ import twitter from "../assets/images/twitter.svg"
 import medium from "../assets/images/medium.svg"
 
 export const INFO_TEXT = "Access verified TradFi-backed trading pools with Keyring's protocol-agnostic whitelisting and AML/KYC."
-export const RIGHTS_RESERVED_TEXT = "2022 Keyring Network © All rights reserved"
+export const RIGHTS_RESERVED_TEXT = "2022 @ Keyring Network - BUSL 1.1"
 export const SOCIAL = [
   {
     icon: medium,
