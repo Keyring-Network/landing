@@ -77,7 +77,7 @@ const LatestNews = () => {
           })}
         </div>
         <a
-          url="https://medium.com/@keyring"
+          url="https://medium.com/"
           className={classNames("btn_whiteBorder", styles.newsBtn)}
           title={content.BTN_TEXT}
           rel="noreferrer"
