@@ -88,6 +88,8 @@
   z-index: 5;
 }
 
+
+
 .decorKeyUp,
 .decorFingerPrint {
   position: absolute;
@@ -164,12 +166,14 @@
     max-width: 220px;
   }
 
+  .signUpContent :global(.react-typeform-embed) {
+    width: 100%;
+  }
+  
   .btn {
     width: 100%;
-
-
   }
-
+  
   .btn span {
     font-size: 16px;
     padding: 11px 20px;

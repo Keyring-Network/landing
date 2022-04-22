@@ -70,6 +70,13 @@ a {
   transition: all .4s;
 }
 
+button {
+  background: none;
+  cursor: pointer;
+  outline: none;
+  transition: all .4s;
+}
+
 a, a:hover,
 a:focus, a:active {
   text-decoration: none;

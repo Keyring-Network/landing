@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "gatsby";
-import classNames from "classnames/bind";
-import { useWindowScroll } from "react-use";
-import { globalHistory as history } from "@reach/router";
+import React, { useState, useEffect } from 'react';
+import { Link } from 'gatsby';
+import classNames from 'classnames/bind';
+import { useWindowScroll } from 'react-use';
+import { globalHistory as history } from '@reach/router';
+import { Popup } from 'react-typeform-embed';
 
-import MobileMenu from "./components/MobileMenu";
-import Logo from "../Logo";
-import * as menu from "../../constants/navMenu";
-import * as styles from "./Header.module.css";
+import MobileMenu from './components/MobileMenu';
+import Logo from '../Logo';
+import * as menu from '../../constants/navMenu';
+import * as styles from './Header.module.css';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,9 +42,9 @@ const Header = () => {
         isScrolledDown && styles.scrolledHeader
       )}
     >
-      <div className={classNames("container", styles.container)}>
+      <div className={classNames('container', styles.container)}>
         <Link to="/">
-          <Logo color={isOpen ? "#0f2830" : "#ffffff"} />
+          <Logo color={isOpen ? '#0f2830' : '#ffffff'} />
         </Link>
         <MobileMenu
           menuList={menu.navMenu}
@@ -57,13 +58,24 @@ const Header = () => {
                 to={el.url}
                 title={el.text}
                 className={classNames({
-                  [styles.active]: el.url === hash && hash !== "#join-waitlist",
+                  [styles.active]: el.url === hash && hash !== '#join-waitlist',
                 })}
               >
                 {el.text}
               </Link>
             </li>
           ))}
+          <li>
+            <Popup id="PF5a05ot" size={80}>
+              <button
+                title={menu.CTA_BUTTON}
+                type="button"
+                className="btn_whiteBorder"
+              >
+                {menu.CTA_BUTTON}
+              </button>
+            </Popup>
+          </li>
         </ul>
       </div>
     </header>
