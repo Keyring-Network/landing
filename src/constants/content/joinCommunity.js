@@ -44,6 +44,6 @@ export const SOCIAL_LIST = [
     title: "Medium",
     text: "",
     btn_text: "Read more",
-    btn_url: "https://medium.com/@keyring",
+    btn_url: "",
   },
 ]

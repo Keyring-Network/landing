@@ -10,10 +10,10 @@ const Homepage = () => (
   <>
     <Hero />
     <WhatWeDo />
-    <LatestNews />
-    <FAQ />
-    <JoinCommunity />
-    <SignUp />
+    {/* <LatestNews /> */}
+    {/* <FAQ /> */}
+    {/* <JoinCommunity /> */}
+    {/* <SignUp /> */}
   </>
 )
 
