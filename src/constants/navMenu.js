@@ -4,5 +4,5 @@ export const navMenu = [
   // { text: 'News', url: '#news' },
   // { text: 'FAQ', url: '#faq' },
   // { text: 'Community', url: '#community' },
-  { text: 'Join the Waitlist', url: '#join-waitlist' },
+  // { text: 'Join the Waitlist', url: '#join-waitlist' },
 ];
