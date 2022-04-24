@@ -33,7 +33,7 @@ export const SOCIAL_LIST = [
     title: "Discord",
     text: "",
     btn_text: "Request to join the server",
-    btn_url: "https://discord.gg/CazSYvuMHW",
+    btn_url: "",
   },
   {
     icon: <svg xmlns={"http://www.w3.org/2000/svg"} width={"49"} height={"48"} viewBox={"0 0 49 48"} fill={"none"}>

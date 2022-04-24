@@ -6,8 +6,8 @@ export const TITLE = (
   </>
 );
 export const DESCRIPTION =
-  "Keyring solves the problem of whitelisting for DeFi whilst retaining privacy. " +
-  "We are a DeFi-centric, institution-backed service, permitting point-in-time KYC/AML checks via smart contracts.";
+  "Keyring solves the problem of AML/KYC for dapps with a simple NFT-based solution " + 
+  "whilst preserving the privacy of DeFi users";
 export const LIST = [
   {
     icon: (
@@ -43,8 +43,10 @@ export const LIST = [
       </svg>
     ),
     title:
-      "Prove your eligibility whilst remaining private",
-    text: "Generate your compliance credentials without sharing your underlying data on-chain. Keyring introduces a seamless ability to maintain user privacy whilst providing regulatory-compliance, essential to onboarding millions of new DeFi users, including legacy finance and institutions.",
+      "Prove eligibility. Remain anonymous",
+    text: "Generate your compliance credentials without sharing your underlying data on-chain." +
+    " Keyring introduces a seamless ability to maintain user privacy whilst providing regulatory-compliance, " +
+    "essential to onboarding millions of new DeFi users, including legacy finance and institutions.",
   },
   {
     icon: (
@@ -80,8 +82,9 @@ export const LIST = [
       </svg>
     ),
     title:
-      "Create institution-grade exclusive liquidity pools",
-    text: "Keyring enables the creation of access-controlled permission pools. Execute trades safe in the knowledge that all parties have been verified and whitelisted against up-to-date sanction databases.",
+      "Create whitelisted liquidity pools",
+    text: "Keyring enables the creation of whitelisted pools. Execute trades safe in the knowledge that " +
+    "all parties have been verified and sanction screened.",
   },
   {
     icon: (
@@ -116,6 +119,8 @@ export const LIST = [
     ),
     title:
       "AML/KYC for DeFi, from DeFi",
-    text: "Our team are bridging the links between regulators, traditional finance and DeFi protocols to unlock the $5tn of institutional money looking to deploy into digital assets. Most importantly, we look to do this by retaining the vibrant ecosystem within DeFi.",
+    text: "Our team are bridging the links between regulators, traditional finance and DeFi protocols to unlock institutional" + 
+    " money looking to deploy into DeFi. " +
+    "Most importantly, we look to do this by retaining the vibrant ecosystem within DeFi.",
   },
 ];
