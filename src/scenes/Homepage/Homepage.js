@@ -9,7 +9,7 @@ import SignUp from "./components/SignUp"
 const Homepage = () => (
   <>
     <Hero />
-    <WhatWeDo />
+    {/* <WhatWeDo /> */}
     {/* <LatestNews /> */}
     {/* <FAQ /> */}
     {/* <JoinCommunity /> */}

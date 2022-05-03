@@ -41,7 +41,7 @@ const Header = () => {
         isScrolledDown && styles.scrolledHeader
       )}
     >
-      <div className={classNames("container", styles.container)}>
+      {/* <div className={classNames("container", styles.container)}>
         <Link to="/">
           <Logo color={isOpen ? "#0f2830" : "#ffffff"} />
         </Link>
@@ -65,7 +65,7 @@ const Header = () => {
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
     </header>
   );
 };
