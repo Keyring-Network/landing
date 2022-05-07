@@ -9,11 +9,11 @@ import SignUp from "./components/SignUp"
 const Homepage = () => (
   <>
     <Hero />
-    <WhatWeDo />
-    <LatestNews />
-    <FAQ />
-    <JoinCommunity />
-    <SignUp />
+    {/* <WhatWeDo /> */}
+    {/* <LatestNews /> */}
+    {/* <FAQ /> */}
+    {/* <JoinCommunity /> */}
+    {/* <SignUp /> */}
   </>
 )
 

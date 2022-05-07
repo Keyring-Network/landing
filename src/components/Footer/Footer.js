@@ -16,23 +16,23 @@ const Footer = () => (
       )}
     >
       <Logo color="#ffffff" />
-      <ul className={styles.menu}>
+      {/* <ul className={styles.menu}>
         {menu.navMenu.map((el) => (
           <li key={el.url}>
             <Link to={el.url}>{el.text}</Link>
           </li>
         ))}
-      </ul>
+      </ul> */}
     </div>
     <div className={classNames("container", styles.footerContainer)}>
       <p className={styles.footerInfo}>{content.INFO_TEXT}</p>
-      <ul className={styles.mobileMenu}>
+      {/* <ul className={styles.mobileMenu}>
         {menu.navMenu.map((el) => (
           <li key={el.url}>
             <Link to={el.url}>{el.text}</Link>
           </li>
         ))}
-      </ul>
+      </ul> */}
       <ul className={styles.socials}>
         {content.SOCIAL.map((el) => (
           <li key={el.icon}>
