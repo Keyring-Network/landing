@@ -60,7 +60,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
-        id: "GTM-55P23WH",
+        id: "GTM-P36MTN4",
   
         // Include GTM in development.
         //
