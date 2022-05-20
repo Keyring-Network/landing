@@ -2,7 +2,7 @@ import React from "react";
 
 export const TITLE = (
   <>
-    <span>Connecting</span> DeFi; 
+    <span>Connecting</span></br> DeFi 
     <span> x</span> TradFi
   </>
 );
