@@ -3,7 +3,7 @@ import React from "react";
 export const TITLE = (
   <>
     <span>Connecting </span> 
-    </br>DeFi <span>x </span>TradFi
+    DeFi <span>x </span>TradFi
   </>
 );
 export const DESCRIPTION =
