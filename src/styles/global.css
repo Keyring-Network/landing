@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap');
 
 @font-face {
-  font-family: "Gilroy-Regular";
-  src: url("/fonts/Gilroy-Regular.woff2");
+  font-family: 'Gilroy-Regular';
+  src: url('/fonts/Gilroy-Regular.woff2');
 }
 
 @font-face {
-  font-family: "Gilroy-SemiBold";
-  src: url("/fonts/Gilroy-SemiBold.woff2");
+  font-family: 'Gilroy-SemiBold';
+  src: url('/fonts/Gilroy-SemiBold.woff2');
 }
 
 * {
@@ -20,19 +20,25 @@ html {
 
 html,
 body,
-h1, h2, h3,
-h4, h5, h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p {
   margin: 0;
-  font-family: -apple-system, "Sora", sans-serif;
+  font-family: -apple-system, 'Sora', sans-serif;
 }
 
 p {
   letter-spacing: 0.02em;
 }
 
-h1, h2, h3 {
-  font-family: "Sora", sans-serif;
+h1,
+h2,
+h3 {
+  font-family: 'Sora', sans-serif;
   font-weight: 700;
 }
 
@@ -61,28 +67,49 @@ h4 {
 h1 span,
 h2 span,
 h3 span {
-  background: -webkit-linear-gradient(#2ee297, #1dc9d4);
+  background: rgb(29, 201, 212);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(29, 201, 212, 1) 0%,
+    rgba(46, 226, 151, 1) 78%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(29, 201, 212, 1) 0%,
+    rgba(46, 226, 151, 1) 78%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(29, 201, 212, 1) 0%,
+    rgba(46, 226, 151, 1) 78%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1dc9d4",endColorstr="#2ee297",GradientType=1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 a {
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
-a, a:hover,
-a:focus, a:active {
+a,
+a:hover,
+a:focus,
+a:active {
   text-decoration: none;
   cursor: pointer;
   outline: none;
 }
 
-li:focus, li:active,
-div:focus, div:active {
+li:focus,
+li:active,
+div:focus,
+div:active {
   outline: none;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
 }
 
@@ -97,8 +124,9 @@ img {
   width: 100%;
 }
 
-body, p {
-  font-family: "Gilroy-Regular", sans-serif;
+body,
+p {
+  font-family: 'Gilroy-Regular', sans-serif;
 }
 
 .button:after {
@@ -108,11 +136,90 @@ body, p {
 .b-green span {
   padding: 20px 48px;
   border: 2px solid;
-  border-image-source: linear-gradient(223.23deg, #2EE297 0.2%, #1DC9D4 78.23%);
-  border-image: linear-gradient(to right, #2EE297, #1DC9D4) 1;
+  border-image-source: linear-gradient(223.23deg, #2ee297 0.2%, #1dc9d4 78.23%);
+  border-image: linear-gradient(to right, #2ee297, #1dc9d4) 1;
   background: -webkit-linear-gradient(#2ee297, #1dc9d4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.button-green {
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  line-height: 23px;
+  display: inline-flex;
+  position: relative;
+  z-index: 1;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.button-green-gradient {
+  border: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(223.23deg, #2ee297 0.2%, #1dc9d4 78.23%);
+  background: -webkit-linear-gradient(223.23deg, #0f2830 0.2%, #0f2830 78.23%);
+}
+
+.button-green-gradient:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1b4555;
+  z-index: 2;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.button-green-gradient:hover:after {
+  opacity: 1;
+}
+
+.button-green-gradient > span {
+  padding: 20px 48px;
+  position: relative;
+  z-index: 4;
+  border-image-source: linear-gradient(223.23deg, #2ee297 0.2%, #1dc9d4 78.23%);
+  border-image: linear-gradient(to right, #2ee297, #1dc9d4) 1;
+  background: -webkit-linear-gradient(#2ee297, #1dc9d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.4s;
+  color: #1dc9d4;
+}
+
+.button-green-gradient:active > span {
+  z-index: 5;
+  border-image-source: none;
+  border-image: none;
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  color: #0f2830;
+}
+
+.button-green-gradient > span:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(223.23deg, #2ee297 0.2%, #1dc9d4 78.23%);
+  transition: 0.4s;
+  z-index: -1;
+  opacity: 0;
+}
+
+.button-green-gradient:active > span:after {
+  opacity: 1;
 }
 
 .button {
@@ -135,7 +242,7 @@ body, p {
   position: absolute;
   content: '';
   display: block;
-  transition: all .5s;
+  transition: all 0.5s;
   z-index: -1;
 }
 
@@ -184,15 +291,14 @@ body, p {
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
-  background: linear-gradient(268.42deg, #2EE297 -5.41%, #1DC9D4 132%);
-  background: -webkit-linear-gradient(left, #2EE297, #1DC9D4);
+  background: linear-gradient(268.42deg, #2ee297 -5.41%, #1dc9d4 132%);
+  background: -webkit-linear-gradient(left, #2ee297, #1dc9d4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
   -webkit-box-decoration-break: clone;
   color: transparent;
-
 }
 
 .link_colored:after {
@@ -202,10 +308,10 @@ body, p {
   display: flex;
   width: 100%;
   height: 2px;
-  background: linear-gradient(268.42deg, #2EE297 -5.41%, #1DC9D4 132%);
-  content: "";
+  background: linear-gradient(268.42deg, #2ee297 -5.41%, #1dc9d4 132%);
+  content: '';
   opacity: 0;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 .link_colored:hover:after {
@@ -215,8 +321,6 @@ body, p {
 .flex {
   display: flex;
 }
-
-
 
 @media (max-height: 700px) {
   h1 {
@@ -229,7 +333,6 @@ body, p {
     font-size: 40px;
   }
 }
-
 
 @media (max-width: 1400px) {
   .container {
@@ -282,6 +385,12 @@ body, p {
     padding: 11px 32px;
     font-size: 16px;
   }
+
+  .button-green {
+    font-size: 16px;
+  }
+
+  .button-green-gradient > span {
+    padding: 11px 32px;
+  }
 }
-
-
