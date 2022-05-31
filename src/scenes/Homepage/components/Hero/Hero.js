@@ -33,11 +33,9 @@ const Hero = () => {
               </Popup>
               <p className={styles.ctaText}>{content.CTA_TEXT}</p>
             </div>
-
-            {!isMobile ? <AnimatedBlock /> : null}
           </div>
 
-          {isMobile ? <AnimatedBlock isMobile={isMobile} /> : null}
+          <AnimatedBlock isMobile={isMobile} />
         </div>
       </div>
     </>

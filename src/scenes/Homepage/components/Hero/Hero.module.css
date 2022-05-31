@@ -9,16 +9,17 @@
 
 .container {
   margin: auto;
-  padding: 11.875rem 104px;
+  padding: 6rem 104px;
   max-width: 1440px;
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .heroText {
   position: relative;
   text-align: left;
+  flex: 1;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -52,7 +53,7 @@
   z-index: 1;
 }
 
-.heroText .ctaBlock .ctaText {
+.ctaBlock .ctaText {
   max-width: 200px;
   font-size: 16px;
   line-height: 150%;
@@ -90,7 +91,7 @@
   }
 }
 
-@media (max-height: 660px) {
+@media (max-height: 600px) {
   .hero {
     height: 100%;
   }
@@ -103,6 +104,26 @@
   }
 }
 
+@media (max-width: 1140px) {
+  .heroText .ctaBlock {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .heroBtn {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    padding: 5rem 24px 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
 @media (max-width: 991px) {
   .hero {
     height: 100%;
@@ -110,15 +131,13 @@
 
   .container {
     height: 100vh;
-    padding: 8.75rem 24px 0;
-    align-items: center;
-    justify-content: space-between;
   }
 }
 
 @media (max-width: 768px) {
   .container {
     padding: 4.5rem 24px 0;
+    flex-direction: column;
   }
 
   .heroText .description {
@@ -132,23 +151,18 @@
   }
 
   .heroText .ctaText {
+    max-width: 144px;
     font-size: 12px;
   }
 }
 
-@media (max-width: 575px) {
-  .heroText .ctaBlock {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .heroBtn {
-    margin-right: 0;
-    margin-bottom: 16px;
+@media (max-width: 468px) {
+  .hero {
+    height: 100vh;
   }
 }
 
-@media (max-height: 1080px) and (max-width: 991px) {
+@media (max-height: 991px) and (max-width: 768px) {
   .container {
     height: 100%;
   }

@@ -1,11 +1,10 @@
 .animatedBGCircle {
   position: absolute;
-  width: 100%;
   top: 0;
   bottom: 0;
   right: 0;
-  z-index: -1;
-  transform: translate(100px, 0px);
+  left: 0;
+  transform: scale(1.5);
 }
 
 .animatedBGCircleBlock {
@@ -19,34 +18,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 .animatedBGCircleEl {
   width: 100%;
   height: 100%;
   object-fit: contain;
-}
-
-@media (max-height: 1140px) {
-  .animatedBGCircle {
-    transform: translate(130px, 0px);
-  }
-}
-
-@media (max-height: 800px) {
-  .animatedBGCircle {
-    transform: translate(130px, 0px);
-  }
-}
-
-@media (max-width: 1140px) {
-  .animatedBGCircle {
-    transform: translate(calc(-6vw + 25%), 0px);
-  }
-}
-
-@media (max-width: 991px) {
-  .animatedBGCircle {
-    transform: translate(0px, 0px);
-  }
 }

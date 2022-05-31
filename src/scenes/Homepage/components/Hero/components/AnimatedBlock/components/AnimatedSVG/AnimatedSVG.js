@@ -18,11 +18,17 @@ const inOutEasing = (x) => 0.5 * (Math.sin((x - 0.5) * Math.PI) + 1);
 const AnimatedSVG = ({ hover }) => {
   const isHover = useMemo(() => hover, [hover]);
 
-  const currentEasing = isHover ? easings.easeOutQuart : inOutEasing;
+  const currentEasing = isHover ? easings.easeInOutElastic : inOutEasing;
 
   return (
     <div className={styles.animatedSvg}>
-      <SvgCircle hover={isHover} delay={0} easing={currentEasing} />
+      <SvgCircle
+        hover={isHover}
+        delay={0}
+        hoveredDuration={2000}
+        idleDuration={2000}
+        easing={inOutEasing}
+      />
 
       <svg
         width='932'
@@ -31,14 +37,56 @@ const AnimatedSVG = ({ hover }) => {
         fill='none'
         xmlns='http://www.w3.org/2000/svg'
       >
-        <g className={styles.animatedSvgGroup}>
-          <SvgElement1 hover={isHover} delay={0} easing={currentEasing} />
-          <SvgElement2 hover={isHover} delay={0} easing={currentEasing} />
-          <SvgElement3 hover={isHover} delay={0} easing={currentEasing} />
-          <SvgElement4 hover={isHover} delay={0} easing={currentEasing} />
-          <SvgElement5 hover={isHover} delay={0} easing={currentEasing} />
-          <SvgElement6 hover={isHover} delay={0} easing={currentEasing} />
-          <SvgElement7 hover={isHover} delay={0} easing={currentEasing} />
+        <g>
+          <SvgElement1
+            hover={isHover}
+            delay={0}
+            hoveredDuration={2000}
+            idleDuration={2000}
+            easing={currentEasing}
+          />
+          <SvgElement2
+            hover={isHover}
+            delay={0}
+            hoveredDuration={2100}
+            idleDuration={2100}
+            easing={currentEasing}
+          />
+          <SvgElement3
+            hover={isHover}
+            delay={0}
+            hoveredDuration={2000}
+            idleDuration={2000}
+            easing={currentEasing}
+          />
+          <SvgElement4
+            hover={isHover}
+            delay={0}
+            hoveredDuration={1800}
+            idleDuration={1800}
+            easing={currentEasing}
+          />
+          <SvgElement5
+            hover={isHover}
+            delay={0}
+            hoveredDuration={2000}
+            idleDuration={2000}
+            easing={currentEasing}
+          />
+          <SvgElement6
+            hover={isHover}
+            delay={0}
+            hoveredDuration={1800}
+            idleDuration={1800}
+            easing={currentEasing}
+          />
+          <SvgElement7
+            hover={isHover}
+            delay={0}
+            hoveredDuration={2100}
+            idleDuration={2100}
+            easing={currentEasing}
+          />
         </g>
 
         <defs>

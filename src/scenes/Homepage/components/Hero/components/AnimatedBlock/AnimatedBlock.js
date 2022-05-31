@@ -13,7 +13,7 @@ const AnimatedBlock = ({ isMobile = false }) => {
     if (isMobile) {
       timer = setTimeout(() => {
         handleStopAnimation();
-      }, 300);
+      }, 2500);
     }
     return () => {
       clearTimeout(timer);

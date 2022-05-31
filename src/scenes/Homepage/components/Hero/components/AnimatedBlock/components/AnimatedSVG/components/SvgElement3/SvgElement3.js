@@ -1,7 +1,13 @@
 import React from 'react';
-import { useSpring, animated, easings } from 'react-spring';
+import { useSpring, animated } from 'react-spring';
 
-const SvgElement3 = ({ hover, delay, easing }) => {
+const SvgElement3 = ({
+  hover,
+  delay,
+  easing,
+  hoveredDuration,
+  idleDuration,
+}) => {
   const props = useSpring({
     from: { transform: 'translate(-72px, -56px)' },
     to: {
@@ -10,7 +16,7 @@ const SvgElement3 = ({ hover, delay, easing }) => {
     loop: !hover ? { reverse: true } : false,
     delay: delay,
     config: {
-      duration: !hover ? 2000 : 1000,
+      duration: !hover ? idleDuration : hoveredDuration,
       easing: easing,
     },
   });

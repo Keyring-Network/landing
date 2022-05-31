@@ -7,7 +7,7 @@ import useMediaQuery from '../../../../../../../../../../hooks/useMediaQuery';
 
 import * as styles from './SvgCircle.module.css';
 
-const SvgCircle = ({ hover, delay, easing }) => {
+const SvgCircle = ({ hover, delay, easing, hoveredDuration, idleDuration }) => {
   const isMobile = useMediaQuery('(max-width: 768px)');
 
   const propsGreen = useSpring({
@@ -21,7 +21,7 @@ const SvgCircle = ({ hover, delay, easing }) => {
     loop: false,
     delay: delay,
     config: {
-      duration: !hover ? 2000 : 1000,
+      duration: !hover ? idleDuration : hoveredDuration,
       easing: easing,
     },
   });
